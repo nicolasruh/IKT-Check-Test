@@ -1,0 +1,134 @@
+[
+  {
+    "id": 2,
+    "topic": "Speichergrössen",
+    "group": "Grundlagen",
+    "explanation": "",
+    "question": "Welche Aussagen zu digitale Speichergrößen und -einheiten sind richtig?",
+    "options": [
+      {
+        "text": "Das Bit ist die kleinste Einheit der digitalen Speicherung.",
+        "correct": true
+      },
+      {
+        "text": "Ein Byte besteht aus 10 Bits.",
+        "correct": false
+      },
+      {
+        "text": "Ein Byte besteht aus 8 Bits.",
+        "correct": true
+      },
+      {
+        "text": "Ein Bit besteht aus 8 Bytes.",
+        "correct": false
+      },
+      {
+        "text": "Ein Kilobyte besteht aus 1000 Bytes im binären System.",
+        "correct": false
+      },
+      {
+        "text": "Ein Kilobyte besteht aus 1024 Bytes im binären System.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "topic": "World Wide Web (WWW)",
+    "group": "Grundlagen",
+    "explanation": "",
+    "question": "Welche Aussagen über das WWW (World Wide Web) sind richtig?",
+    "options": [
+      {
+        "text": "Das WWW ist ein weltweiter Verbund von Servern, die einander Dokumente bereitstellen.",
+        "correct": true
+      },
+      {
+        "text": "Das WWW ist ein Konsortium, das technische Standards für das Internet festlegt.",
+        "correct": false
+      },
+      {
+        "text": "Das WWW ist nur einer der Dienste des Internets, im Unterschied beispielsweise zu E-Mails oder dem DNS-System.",
+        "correct": true
+      },
+      {
+        "text": "Das WWW ist eine Ansammlung von Dokumenten, die oft durch Hyperlinks miteinander verknüpft sind.",
+        "correct": true
+      },
+      {
+        "text": "Das WWW ist ein isoliertes Netzwerk, das unabhängig vom Internet existiert.",
+        "correct": false
+      },
+      {
+        "text": "Das WWW basiert auf dem Hypertext Transfer Protocol (HTTP) und dem Hypertext Markup Language (HTML).",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "Peripheriegeräte",
+    "group": "Grundlagen",
+    "explanation": "",
+    "question": "Welche Aussagen über Peripheriegeräte sind richtig?",
+    "options": [
+      {
+        "text": "Die CPU ist ein Peripheriegerät.",
+        "correct": false
+      },
+      {
+        "text": "Die Tastatur ist ein Peripheriegerät.",
+        "correct": true
+      },
+      {
+        "text": "Der Arbeitsspeicher ist ein Peripheriegerät.",
+        "correct": false
+      },
+      {
+        "text": "Was nicht auf der Hauptplatine angelötet ist, gehört zur Peripherie.",
+        "correct": true
+      },
+      {
+        "text": "Ein Drucker ist ein Peripheriegerät.",
+        "correct": true
+      },
+      {
+        "text": "Nur was per Kabel an den Computer angeschlossen wird, ist ein Peripheriegerät.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "topic": "Tasks",
+    "group": "Grundlagen",
+    "explanation": "",
+    "question": "Welche Aussagen über Peripheriegeräte sind richtig?",
+    "options": [
+      {
+        "text": "Wenn man ein Fenster minimiert, werden zugehörige Tasks beendet.",
+        "correct": false
+      },
+      {
+        "text": "Wenn man ein Fenster maximiert, werden zugehörige Tasks beendet.",
+        "correct": false
+      },
+      {
+        "text": "Ein Task ist ein Bestandteil eines Programms.",
+        "correct": true
+      },
+      {
+        "text": "Das Betriebssystem ist ein Task.",
+        "correct": false
+      },
+      {
+        "text": "Das Betriebssystem führt Tasks aus.",
+        "correct": true
+      },
+      {
+        "text": "Das Betriebssystem kann Tasks beenden.",
+        "correct": true
+      }
+    ]
+  }
+]

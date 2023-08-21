@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anmeldung IKT-Check</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    
+    
+    
+        <div id="quiz-container">
+    <div id="logo-and-topic">
+      <img id="logo" src="NKSA_logo_orange.png" alt="Logo">
+      <div id="header_right">
+        <h1>IKT-Check</h1>   
+      </div>
+    </div>
+    
+    <h1>Quiz Anmeldung</h1>
+
+    <form id="registration-form">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="class">Klasse:</label><br>
+        <select id="class" name="class">
+            <option value="G1A">G1A</option>
+            <option value="G1B">G1B</option>
+            <option value="G1C">G1C</option>
+            <option value="G1D">G1D</option>
+            <option value="G1E">G1E</option>
+            <option value="G1F">G1F</option>
+            <option value="other">Andere Klasse</option>
+        </select><br>
+        <label for="accessCode">Zugangscode:</label><br>
+        <input type="text" id="accessCode" name="accessCode"><br>       
+        <input type="checkbox" id="freiwilligAnmelden" name="freiwilligAnmelden" value="true">
+        <label for="freiwilligAnmelden">Ich möchte mich sicher für den IKT-Kurs anmelden, unabhängig vom Resultat dieses IKT-Checks</label><br>
+        <div id="los"><input  type="submit" value="Starten"></div>
+    </form>
+            </div>
+    <script>
+        $(document).ready(function() {
+            $('#registration-form').on('submit', function(e) {
+                e.preventDefault();
+
+                var email = $('#email').val();
+                var accessCode = $('#accessCode').val();
+
+                var emailRegex = /^[^@]+@stud\.nksa\.ch|@nksa\.ch$/;
+                var accessCodeRegex = /^[A-Z]{5}$/;
+
+                if (!emailRegex.test(email)) {
+                    alert('Bitte geben Sie eine gültige E-Mail-Adresse ein');
+                    return;
+                }
+
+                if (!accessCodeRegex.test(accessCode)) {
+                    alert('Der Zugangscode muss aus fünf Großbuchstaben bestehen');
+                    return;
+                }
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/register',
+                    data: $(this).serialize(),
+                    success: function(data) {
+                        if (data.error) {
+                            alert(data.error);
+                        } else {
+                            window.location.href = './ikt-check';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

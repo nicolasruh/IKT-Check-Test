@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IKT-Check</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+  <div id="quiz-container">
+    <div id="logo-and-topic">
+      <img id="logo" src="NKSA_logo_orange.png" alt="Logo">
+      <div id="header_right">
+        <h1>IKT-Check</h1>   
+      </div>
+    </div>
+    <div id="topic"></div>  
+    <h2 id="question"><%= question.question %></h2>
+
+   <div id="options">
+      <% question.options.forEach((option, index) => { %>
+        <div class="option">
+          <input type="checkbox" name="option" id="option<%= index + 1 %>" value="<%= option.ans %>" <%= option.ans ? 'checked' : '' %>>
+          <label for="option<%= index + 1 %>" class="optionLabel"><%= option.text %></label>
+        </div>
+      <% }) %>
+    </div>
+    
+    <div id="control">      
+      <a href="/prev" ><button id="prev" <%= currentQuestionIndex == 0 ? 'disabled' : '' %>><i class="fas fa-arrow-left"></i> </button></a>
+
+      <div id="progress">Frage <%= currentQuestionIndex+1 %> von <%= n %></div>
+
+      <a href="/next" ><button id="next" <%= currentQuestionIndex == n-1 ? 'disabled' : '' %>> <i class="fas fa-arrow-right"></i></button></a>
+
+      <button id="submit" <%= !lastQuestionSeen ? 'disabled' : '' %>>Abgeben</button>
+
+    </div>
+  </div>
+  
+  <script>
+    $('input[name="option"]').change(function() {
+      const questionIndex = <%= currentQuestionIndex %>;
+      const optionIndex = $(this).parent().index();
+      const checked = $(this).is(':checked');
+
+      $.ajax({
+        type: 'POST',
+        url: '/update',
+        data: { questionIndex, optionIndex, checked },
+        success: function(data) {
+          if (data.error) {
+            alert(data.error);
+          } else {
+            console.log(data.success);
+          }
+        }
+      });
+    });
+
+    // In Ihrer check.ejs Datei, fügen Sie folgendes im Script-Block hinzu:
+    function checkAllSeen() {
+      $.ajax({
+        type: 'POST',
+        url: '/submit',
+        success: function(data) {
+          if (data.error) {
+            alert(data.error);
+          } else {
+            // Hier können Sie den Erfolg verarbeiten. 
+            // Zum Beispiel den Benutzer auf eine andere Seite weiterleiten, usw.
+            console.log(data.success);
+              
+              // Den Benutzer zur Result-Seite weiterleiten mit den Daten aus dem JSON-Objekt:
+                window.location.href = '/result?email=' + data.email +
+                    '&start=' + data.start +
+                    '&ende=' + data.ende +
+                    '&duration=' + data.duration +
+                    '&totalQuestions=' + data.totalQuestions +
+                    '&totalScore=' + data.totalScore;
+          }
+        }
+      });
+    }
+
+    //der ausschaltbare submit-button  
+    document.addEventListener('DOMContentLoaded', function() {
+        const submitButton = document.getElementById('submit');
+        submitButton.addEventListener('click', checkAllSeen);
+    });
+</script>    
+
+</body>
+</html>
+

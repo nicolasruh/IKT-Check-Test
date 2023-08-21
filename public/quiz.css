@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.3;
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#logo-and-topic {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -0.7em;
+}
+
+#logo {
+  margin-right: 10px;
+  width: 20em;  /* Kontrolliert die Breite des Logos */
+  height: auto;  /* Behält das Seitenverhältnis bei */  
+}
+
+
+#topic {
+  color: #777;
+  font-weight: 20;
+  margin-bottom: 0.1em;
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+
+h1 {
+  color: #777;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+  font-size: 2.7em;
+}
+
+h2 {
+  color: #000;
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+  margin-top: 0.3em;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;  
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1em;
+  padding-left: 0em;    
+  margin-bottom: 1em;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8em;
+  padding: 0.3em;
+}
+
+.option i {
+    flex: 0 0 20px;
+}
+
+.option input {
+    flex: 0 0 20px;
+}
+
+.optionLabel {
+  margin-left: 1em;
+}
+
+
+.fas.fa-check {
+  color: #4caf50; /*green*/
+  visibility: hidden;
+}
+
+.fas.fa-times {
+  color: #757575; /*dark gray*/
+  visibility: hidden;
+}
+
+.feedback .fas.fa-check,
+.feedback .fas.fa-times {
+  visibility: visible;
+}
+
+#control {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 1em;    
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
+
+
+#prev, #next {
+    font-weight: 600;
+    min-width: 70px;
+}
+
+button {
+  background-color: #ff6900;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+button:hover {
+  background-color: #e05e00;
+}
+
+button[disabled] {
+  color: grey;
+  border-color: grey;
+  cursor: not-allowed;
+}
+
+#progress {
+    min-width: 200px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#submit {
+    margin-left: auto;
+    border: 3px solid #ff6900;
+    color: #ff6900;
+    background-color: white;
+}
+
+#registration-form {
+    width: 100%;
+    margin: 20px auto; /* Dies zentriert die Form horizontal und gibt ihr oben und unten einen Abstand von 20px. */
+}
+
+#registration-form label, 
+#registration-form input,
+#registration-form select {
+    width: 100%; /* Volle Breite des Elternelements */
+    margin-bottom: 20px; /* Abstand am unteren Rand */
+    box-sizing: border-box; /* Damit Padding und Border nicht zur Gesamtbreite hinzugefügt werden */
+}
+
+#registration-form input[type="checkbox"] {
+    width: auto; /* Checkboxen sollten nicht die volle Breite haben */
+    margin-right: 10px; /* Ein wenig Abstand zwischen der Checkbox und ihrem Label */
+}
+
+#registration-form input[type="submit"] {
+    padding: 10px 20px; /* Ein bisschen extra Polsterung für den Submit-Button */
+    background-color: #007BFF; /* Ein schönes Blau für den Button */
+    color: white; /* Weißer Text auf dem Button */
+    border: none; /* Keine Ränder */
+    cursor: pointer; /* Zeigt die Hand, wenn Sie darüber fahren */
+    border-radius: 2px; /* Ecken abrunden */
+    max-width:  300px;
+    margin-top: 2em;
+}
+
+#registration-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Ein dunkleres Blau für den Hover-Effekt */
+}
+
+#resultat h1 {
+    font-size: 1.6rem;
+    margin-bottom: 2em;
+}
+
+#resultat p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+#resultat p:first {
+    margin-top: 3em;
+}
+
+#resultat p:last-child {
+    margin-top: 5em;
+    font-size: 1.05rem;
+}
+
+#send-result, #los {
+    margin-top: 40px;
+    text-align: right;
+}
+
+#send-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  #quiz-container {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #control {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 1em;
+  }
+}

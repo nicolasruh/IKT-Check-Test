@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Ergebnisse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+      
+    <div id="quiz-container">
+        <div id="logo-and-topic">
+            <img id="logo" src="NKSA_logo_orange.png" alt="Logo">
+            <div id="header_right">
+                <h1>IKT-Check</h1>   
+            </div>
+        </div>
+        <div id="resultat">
+            <h1>Danke für Ihre Teilnahme am IKT-Check!</h1>
+            <p>E-Mail: <%= email %></p>
+            <p>Benötigte Zeit: <%= duration %> Sekunden</p>
+            <p>Beginn: <%= start %></p>
+            <p>Abgabe: <%= ende %></p>
+            <p>Anzahl beantworteter Fragen: <%= totalQuestions %></p>
+            <p><strong>Erzielte Punkte: <%= totalScore %></strong></p>
+          
+            <div id="send-result">
+                <a href="mailto:<%= email %>?subject=IKT-Check Ergebnis&body=Danke für Ihre Teilnahme am IKT-Check!%0A%0AE-Mail: <%= email %>%0A%0ABenötigte Zeit: <%= duration %> Sekunden%0A%0ABeginn: <%= start %>%0A%0AAbgabe: <%= ende %>%0A%0AAnzahl beantworteter Fragen: <%= totalQuestions %>%0A%0AErzielte Punkte: <%= totalScore %>%0A%0AWie viele Punkte in diesem Jahr zum Bestehen des IKT-Checks nötig waren, erfahren Sie in wenigen Tagen per E-Mail." id="send-btn">Ergebnis per Mail an mich selbst senden</a>
+            </div>
+            
+            <p>Wie viele Punkte in diesem Jahr zum Bestehen des IKT-Checks nötig waren, erfahren Sie in wenigen Tagen per E-Mail.</p>
+        </div>
+    </div>
+</body>
+</html>
