@@ -1,7 +1,3 @@
-Mail,Klasse,Start,Ende,Punkte,nFragen,freiwilligAnmelden
-kjadf@nksa.ch,G1B,2023-08-21T09:10:45.546Z,2023-08-21T09:10:51.096Z,0,4,true
-kjadf@nksa.ch,G1A,2023-08-21T09:15:50.573Z,2023-08-21T09:15:59.880Z,0,4,false
-kjadf@nksa.ch,G1A,2023-08-21T09:20:32.214Z,2023-08-21T09:20:38.516Z,0,4,true
-kjadf@nksa.ch,G1A,2023-08-21T09:21:49.983Z,2023-08-21T09:21:54.521Z,0,4,false
-kjadf@nksa.ch,G1A,2023-08-21T09:36:07.377Z,2023-08-21T09:36:18.099Z,0,4,true
-kjadf@nksa.ch,other,2023-08-21T09:40:35.186Z,2023-08-21T09:40:45.024Z,0,4,true
+Mail,Vorname,Nachname,Klasse,Datum,Start,Ende,Punkte,nFragen,freiwilligAnmelden
+kjadf@nksa.ch,kjadf,Mustermann,G1A,21.08.2023,12:40,12:41,0,4,false
+ada.lovelace@stud.nksa.ch,ada,lovelace,G1A,21.08.2023,12:41,12:42,4,4,true

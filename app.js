@@ -56,6 +56,15 @@ app.post('/register', (req, res) => {
     const j = Math.floor(Math.random() * (i + 1));
     [questions[i], questions[j]] = [questions[j], questions[i]]; // ES6 destructuring assignment for swapping
   }
+    
+  // Shuffle die Optionen für jede Frage
+  questions.forEach(question => {
+    const options = question.options;
+    for (let i = options.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [options[i], options[j]] = [options[j], options[i]];
+    }
+  });
 
   // Füge den "seen" und "ans" Felder hinzu
   questions = questions.map(question => {
@@ -214,21 +223,37 @@ function evaluateQuiz(quizData) {
     console.log("Abgabe von "+quizData.meta.email+"; Ergebnis: "+totalScore+" punkte; freiw. :"+quizData.meta.freiwilligAnmelden);
 
     // Erstelle den CSV-Dateinamen mit aktuellem Datum
-    const currentDate = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+    const currentDate = new Date(quizData.meta.starttime).toISOString().slice(0, 10).replace(/-/g, "");
     const csvFilePath = path.join(__dirname, 'data', `ergebnisse${currentDate}.csv`);
 
     // Überprüfe, ob die CSV-Datei existiert
     if (!fs.existsSync(csvFilePath)) {
         // Wenn die CSV-Datei nicht existiert, erstelle die Überschrift
-        fs.writeFileSync(csvFilePath, 'Mail,Klasse,Start,Ende,Punkte,nFragen,freiwilligAnmelden\n');
+        fs.writeFileSync(csvFilePath, 'Mail,Vorname,Nachname,Klasse,Datum,Start,Ende,Punkte,nFragen,freiwilligAnmelden\n');
     }
+
+    // Extrahiere Vorname und Nachname aus der E-Mail-Adresse
+    const emailParts = quizData.meta.email.split('@')[0].split('.');
+
+    const vorname = emailParts[0];
+    const nachname = emailParts.length > 1 ? emailParts[1] : "Mustermann"; // Wenn kein Punkt vorhanden ist, setzen Sie den Nachnamen auf "Mustermann"
+
+    // Extrahiere und formatiere das Datum
+    const date = new Date(quizData.meta.starttime).toLocaleDateString('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric' });
+
+    // Extrahiere und formatiere Start- und Endzeit auf MEZ
+    const startTime = new Date(quizData.meta.starttime).toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Zurich' });
+    const endTime = new Date().toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Zurich' });
 
     // Erstelle einen CSV-Eintrag mit den gewünschten Daten
     const csvEntry = [
         quizData.meta.email,
+        vorname,
+        nachname,
         quizData.meta.class,
-        new Date(quizData.meta.starttime).toISOString(),
-        new Date().toISOString(),
+        date,
+        startTime,
+        endTime,
         totalScore,
         quizData.questions.length,
         quizData.meta.freiwilligAnmelden
