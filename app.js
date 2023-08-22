@@ -45,7 +45,8 @@ app.post('/register', (req, res) => {
 
   req.session.isAuthenticated = true; // Set the user as authenticated
   req.session.email = email; // Store the email in the session
-  req.session.lastQuestionSeen = false;    
+  req.session.lastQuestionSeen = false; 
+  req.session.startTime = new Date().toISOString();
 
   // Lese die Fragen zuerst aus der JSON-Datei
   const questionsPath = path.join(__dirname, 'data', 'this_check', 'questions.json');
@@ -164,39 +165,41 @@ app.post('/update', (req, res) => {
 
 
 app.post('/submit', checkAuthentication, (req, res) => {
+  const { questionIndex, optionIndex, checked } = req.body;
   const emailPrefix = req.session.email.split('@')[0];
   const filePath = path.join(__dirname, 'data', 'this_check', `${emailPrefix}.json`);
   const quizData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
+  // Update the "ans" field of the option
+  quizData.questions[questionIndex].options[optionIndex].ans = checked;
+    
   const totalScore = evaluateQuiz(quizData);
-      
-  const startTime = new Date(quizData.meta.starttime);
-  const endTime = new Date();
-  const duration = Math.floor((endTime - startTime) / 1000); // Dauer in Sekunden
-  const email = quizData.meta.email;
-
-    res.json({
-        email:email,
-        start:startTime,
-        ende:endTime,
-        duration: duration,
-        totalQuestions: quizData.questions.length,
-        totalScore: totalScore
-    }); 
+  req.session.totalScore = totalScore;
+  quizData.meta.totalScore = totalScore; 
+  quizData.meta.endTime = new Date(); 
+  // Write the updated data back to the file
+  fs.writeFileSync(filePath, JSON.stringify(quizData));    
+  
+  res.json({ success: 'IKT-Test wurde abgeschlossen.' });
     
 });
 
-app.get('/result', checkAuthentication, (req, res) => {
 
+app.get('/result', checkAuthentication, (req, res) => {
+    console.log(req.session)
+    const startTime = new Date(req.session.startTime);
+    const endTime = new Date();
+    const duration = Math.floor((endTime - startTime) / 1000)/60; // Dauer in Minuten
+    // Falls benötigt, kann dieser Endpunkt verwendet werden, um die Ergebnisseite direkt anzuzeigen.
     res.render('result', {
-        email:req.query.email,
-        start:req.query.start,
-        ende:req.query.ende,
-        duration: req.query.duration,
-        totalQuestions: req.query.totalQuestions,
-        totalScore: req.query.totalScore
+        email: req.session.email,
+        start: startTime.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Zurich' }),
+        ende: endTime.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Zurich' }),
+        duration: duration,  // Dauer in Sekunden, wenn Sie sie gespeichert haben
+        totalQuestions: questions.length,
+        totalScore: req.session.totalScore // Sie müssen den Gesamtscore in der Session speichern, um ihn hier zu verwenden
     });
 });
+
 
 function evaluateQuiz(quizData) {
     let totalScore = 0;

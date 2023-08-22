@@ -61,24 +61,22 @@
 
     // In Ihrer check.ejs Datei, fügen Sie folgendes im Script-Block hinzu:
     function checkAllSeen() {
+      const questionIndex = <%= currentQuestionIndex %>;
+      const optionIndex = $(this).parent().index();
+      const checked = $(this).is(':checked');
+        
       $.ajax({
         type: 'POST',
         url: '/submit',
+        data: { questionIndex, optionIndex, checked },
         success: function(data) {
           if (data.error) {
             alert(data.error);
           } else {
             // Hier können Sie den Erfolg verarbeiten. 
-            // Zum Beispiel den Benutzer auf eine andere Seite weiterleiten, usw.
             console.log(data.success);
-              
-              // Den Benutzer zur Result-Seite weiterleiten mit den Daten aus dem JSON-Objekt:
-                window.location.href = '/result?email=' + data.email +
-                    '&start=' + data.start +
-                    '&ende=' + data.ende +
-                    '&duration=' + data.duration +
-                    '&totalQuestions=' + data.totalQuestions +
-                    '&totalScore=' + data.totalScore;
+            //Zur result-Route weiterleiten - die nötigen Daten stehen in session  
+            window.location.href = '/result';
           }
         }
       });
