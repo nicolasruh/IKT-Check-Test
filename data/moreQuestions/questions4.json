@@ -1,0 +1,727 @@
+[
+  {
+    "id": 15,
+    "topic": "Grafikformate",
+    "group": "Grundlagen",
+    "explanation": "<p>Grafikformate sind Dateiformate, die zur Speicherung von digitalen Bildern verwendet werden. Es gibt viele verschiedene Grafikformate, die jeweils ihre eigenen Stärken und Schwächen haben und für unterschiedliche Anwendungen geeignet sind.</p><p>Einige der gebräuchlichsten Grafikformate sind JPEG, PNG, GIF, BMP und TIFF. JPEG ist ein verlustbehaftetes Format, das für Fotos und Bilder mit vielen Farben geeignet ist. PNG ist ein verlustfreies Format, das Transparenz unterstützt und für Bilder mit wenigen Farben und klaren Linien geeignet ist. GIF ist ebenfalls ein verlustfreies Format, das für einfache Animationen und Bilder mit wenigen Farben verwendet wird. BMP und TIFF sind beides verlustfreie Formate, die für hochauflösende Bilder und professionelle Druckanwendungen geeignet sind.</p><p>Es gibt auch spezielle Grafikformate für Vektorgrafiken, wie SVG und EPS. Vektorgrafiken sind skalierbar, ohne dass es zu einem Qualitätsverlust kommt, und werden oft für Logos und andere Designs verwendet, die in verschiedenen Größen benötigt werden.</p><p>Die Wahl des richtigen Grafikformats hängt von der Art des Bildes und der geplanten Verwendung ab. Es ist wichtig, das richtige Format zu wählen, um die Qualität des Bildes zu erhalten und die Dateigröße zu minimieren.</p>",
+    "question": "Welche Aussagen über Grafikformate sind richtig?",
+    "options": [
+      {
+        "text": "Die Wahl des richtigen Grafikformats hängt von der Art des Bildes und der geplanten Verwendung ab.",
+        "correct": true
+      },
+      {
+        "text": "JPEG ist ein verlustbehaftetes Format, das für Fotos und Bilder mit vielen Farben geeignet ist.",
+        "correct": true
+      },
+      {
+        "text": "GIF wird für einfache Animationen und Bilder mit wenigen Farben verwendet.",
+        "correct": true
+      },
+      {
+        "text": "Alle Grafikformate unterstützen Transparenz.",
+        "correct": false
+      },
+      {
+        "text": "PNG ist ein verlustfreies Format, das Transparenz unterstützt.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "topic": "Zellinhalte",
+    "group": "Tabellenkalkulation",
+    "explanation": "<p>Die Zellen in einem Tabellenkalkulationsprogramm wie Excel oder Google Sheets können verschiedene Arten von Inhalten enthalten. Dazu gehören (a) Wahrheitswerte (wie WAHR oder FALSCH), (b) Zahlen und (c) Zeichenketten (also Text, inkl. einzelner Buchstaben). Wenn eine Zelle andere Inhalte anzeigt, bspw. Datums- oder Zeitangaben, Prozentwerte, Beträge mit Währungszeichen, Zahlenwerte mit Massangaben o.ä., dann liegt das üblicherweise daran, dass die Darstellung des Inhalts (in allen angeführten Beispielen einfach eine Zahl) per Zellformatierung angepasst wurde – mit der entsprechenden Formatierung wird dann bspw. der Inhalt 0.1 als 10% dargestellt oder der Zahlenwert 3 als 03.01.1900 angezeigt. </p><p>Eine Zelle kann in der Regel nur einen Wert oder Ausdruck gleichzeitig enthalten. Die Art des Inhalts kann oft an der Ausrichtung innerhalb der Zelle erkannt werden: Zahlen sind in der Regel rechtsbündig, Text ist linksbündig und Wahrheitswerte sind oft mittig ausgerichtet. Wenn eine Zelle voller Hashtags (#####) angezeigt wird, bedeutet das, dass die Zelle zu schmal ist, um den gesamten Inhalt anzuzeigen, nicht dass sie Hexadezimalzeichen enthält. </p><p>Man kann auch Formeln in Zellen eingeben, die mit einem Gleichheitszeichen (=) beginnen. Das Ergebnis der Berechnung wird dann als Inhalt der Zelle angezeigt, und wieder gilt: Das Ergebnis kann nur (a) ein Wahrheitswert, (b) eine Zahl oder (c) eine Zeichenkette sein (oder eine Fehlermeldung). Versteht man diese Limitierung möglicher Zellinhalte, fällt der Umgang mit Tabellenkalkulationsprogrammen viel einfacher. </p>",
+    "question": "Welche Aussagen über Zellinhalte in einem Tabellenkalkulationsprogramm sind richtig?",
+    "options": [
+      {
+        "text": "Eine Zelle kann einen Wahrheitswert enthalten.",
+        "correct": true
+      },
+      {
+        "text": "Eine Zelle kann ein Datum enthalten.",
+        "correct": true
+      },
+      {
+        "text": "Wenn eine Zelle lauter Hashtags (#####) zeigt, enthält sie Hexadezimalzeichen.",
+        "correct": false
+      },
+      {
+        "text": "Eine Zelle kann einen Prozentwert enthalten.",
+        "correct": true
+      },
+      {
+        "text": "Eine Zelle kann mehrere Zahlen enthalten.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "topic": "Formatvorlagen",
+    "group": "Textverarbeitung",
+    "explanation": "<p>Formatvorlagen, auch bekannt als Styles, sind eine mächtige Funktion in Textverarbeitungsprogrammen wie Microsoft Word. Sie ermöglichen es, das Aussehen von Text (wie Schriftart, Schriftgröße, Farbe, Ausrichtung und mehr) zu definieren und konsistent auf verschiedene Teile eines Dokuments anzuwenden. Das führt unter anderem dazu, dass das Aussehen selbst grosser Dokumente einheitlich ist und auch im Nachhinein sehr einfach und effizient noch verändert werden kann</p><p>Die Grundidee der (indirekten) Formatierung mittels Formatvorlagen ist die, dass man gleichartige Textteile zunächst benannt werden, indem man ihnen eine Formatvorlage zuweist – bspw. «Überschrift 2» für alle Textbestandteile, die diese Funktion erfüllen. Das Aussehen dieser besonderen Textteile kann dann zu jedem Zeitpunkt bestimmt bzw. abgeändert werden, indem man die Formatierungseigenschaften der Formatvorlage ändert. Weil diese Eigenschaften auf mit dieser Vorlage ausgezeichneten Textteile angewandt wird, ist die Einheitlichkeit der Darstellung immer gegeben. </p><p>Die Nutzung von Formatvorlagen bringt noch eine Reihe weiterer Vorteile mit sich. Indem bspw. alle Überschriften und Unterüberschriften mit entsprechenden Formatvorlagen ausgezeichnet werden, kann die Nummerierung der Überschriften automatisiert oder ein Inhaltsverzeichnis automatisch erstellt werden. Ähnlich ist das mit Abbildungensverzeichnissen, Fussnoten oder Querverweisen – erst die explizite Auszeichnung solche speziellen Textbestandteile per Formatvorlage ermöglicht die Automatisierung von zugehörigen Arbeitsschritten. </p><p>Es gibt verschiedene Arten von Formatvorlagen, darunter Zeichen-, Absatz-, Verknüpfte und Listenformatvorlagen. Jede Art verwaltet nur die entsprechenden Formatierungseigenschaften, deswegen kann man bspw. in einer Zeichenformatvorlage wie «Hervorhebung» keine Absatzeigenschaften wie «Blocksatz» oder «Zeilenabstand» ändern.</p><p>Formatvorlagen können auch basierend auf anderen Formatvorlagen erstellt werden, was bedeutet, dass Änderungen an der Basisvorlage sich auf alle davon abgeleiteten Formatvorlagen auswirken oder umgekehrt: Abgeleitete Vorlagen übernehmen alle Eigenschaften der Basis, können dann aber einige davon selbst festlegen und somit die Einstellung der Basis überschreiben. Dies ermöglicht eine hohe Flexibilität und Effizienz bei der Formatierung von Dokumenten.</p>",
+    "question": "Welche Aussagen über Formatvorlagen sind richtig?",
+    "options": [
+      {
+        "text": "Formatvorlagen sind eine Funktion in Textverarbeitungsprogrammen wie Microsoft Word.",
+        "correct": true
+      },
+      {
+        "text": "Es gibt verschiedene Arten von Formatvorlagen, darunter Zeichen-, Absatz-, Verknüpfte und Listenformatvorlagen.",
+        "correct": true
+      },
+      {
+        "text": "Verknüpfte Formatvorlagen speichern Eigenschaften von Zeichen und Absatz.",
+        "correct": true
+      },
+      {
+        "text": "In einer Zeichenformatvorlage kann man Absatzeigenschaften wie \"Blocksatz\" oder \"Zeilenabstand\" ändern.",
+        "correct": false
+      },
+      {
+        "text": "Änderungen an der Basisvorlage wirken sich auf alle davon abgeleiteten Formatvorlagen aus.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "topic": "Tabulatoren",
+    "group": "Textverarbeitung",
+    "explanation": "<p>Tabulatoren, in Kombination mit Tabstopps, dienen zur horizontalen Ausrichtung und Platzierung von Text in Textverarbeitungsprogrammen. Ein Tabulator ist, technisch gesprochen, ein Formatierungszeichen, dessen Funktion es ist, den Cursor (bzw. die folgenden Zeichen) zu vordefinierten Positionen, bekannt als Tabstopps, entlang der horizontalen Achse einer Seite zu verschieben. </p><p>Tabstopps fungieren als Sprungmarken bzw. Ankerpunkte, an denen der Text durch Drücken der Tabulatortaste positioniert wird. Sie können an beliebiger Stelle in einem Dokument festgelegt werden und haben unterschiedliche Ausrichtungsoptionen wie linksbündig, rechtsbündig, zentriert und dezimal. Diese bestimmen, wie der Text relativ zum Tabstopp ausgerichtet wird. </p><p>Tabulatoren und Tabstopps sind wichtige Werkzeuge zur Organisation und Formatierung von Text. Sie ermöglichen das Erstellen von strukturierten Listen, das Formatieren von Inhaltsverzeichnissen oder das geordnete Anordnen von Daten in Spalten. Im Vergleich zu Tabellen bieten Tabulatoren und Tabstopps ein einfacheres, flexiblere und oft schnelleres Mittel zur Textausrichtung, insbesondere für einfache Textstrukturen. Da Tabstopps zu den Eigenschaften eines Absatzes gehören, passt diese Technik auch besser zum Einsatz von Formatvorlagen als bspw. ein tabellenbasiertes Layout. </p>",
+    "question": "Welche Aussagen zu Tabulatoren sind richtig?",
+    "options": [
+      {
+        "text": "Für den Bereich rechts vom letzten manuellen Tabstopp gelten (automatisch eingefügte) Standardtabstopps.",
+        "correct": true
+      },
+      {
+        "text": "Pro Zeile kann nur ein Tabstopp festgelegt werden.",
+        "correct": false
+      },
+      {
+        "text": "Tabulatoren werden sichtbar, wenn man die Formatierungszeichen einblendet.",
+        "correct": true
+      },
+      {
+        "text": "Es gibt verschiedene Arten von Tabstopps, die sich bspw. bzgl. ihrer Ausrichtung unterscheiden.",
+        "correct": true
+      },
+      {
+        "text": "Tabstopps können mit dem Formatpinsel von einem Ansatz auf einen anderen kopiert werden.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "Tasks",
+    "group": "Grundlagen",
+    "explanation": "<p>Ein Task, auch als Prozess bekannt, ist eine ausführbare Aufgabe, die vom Betriebssystem eines Computers verwaltet wird. Tasks können verschiedene Aktionen umfassen, wie das Öffnen einer Anwendung, das Ausführen einer Berechnung oder das Herunterladen von Dateien. Das Betriebssystem ist verantwortlich für die Koordination und Priorisierung der Ausführung von Tasks, um die Ressourcen des Systems effizient zu nutzen. Ein Task kann im Hintergrund ausgeführt werden, während der Benutzer andere Aufgaben auf dem Computer erledigt.</p> <p>Das Verständnis von Tasks ist wichtig, um zu verstehen, wie Betriebssysteme funktionieren und wie sie Ressourcen verwalten und verteilen. Mit diesem Wissen können Benutzer effizienter mit ihren Computern umgehen, da sie besser verstehen, wie Anwendungen ausgeführt werden und wie sie ihre Systemressourcen optimal nutzen können. </p>",
+    "question": "Welche Aussagen über Tasks sind richtig?",
+    "options": [
+      {
+        "text": "Ein Task kann beispielsweise das Öffnen einer Anwendung, das Ausführen einer Berechnung oder das Herunterladen von Dateien sein.",
+        "correct": true
+      },
+      {
+        "text": "Ein Task ist eine ausführbare Aufgabe oder ein Prozess, der vom Betriebssystem verwaltet wird.",
+        "correct": true
+      },
+      {
+        "text": "Das Betriebssystem koordiniert und priorisiert die Ausführung von Tasks, um die Ressourcen des Systems effizient zu nutzen.",
+        "correct": true
+      },
+      {
+        "text": "Wenn man ein Fenster maximiert, werden zugehörige Tasks beendet.",
+        "correct": false
+      },
+      {
+        "text": "Das Beenden eines Tasks kann durch den Benutzer, das Betriebssystem oder das Programm selbst ausgelöst werden.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "topic": "Gute Formatierung",
+    "group": "Textverarbeitung",
+    "explanation": "<p>Die Formatierung eines Textdokuments ist wesentlich, um Informationen klar und effizient zu vermitteln. Eine gute Formatierung verbessert die Lesbarkeit, erleichtert das Verständnis und optimiert und vereinheitlicht das Erscheinungsbild des Dokuments. Es gibt verschiedene Merkmale, die eine gute Formatierung ausmachen.</p><p>Zuallererst sollte ein gut formatiertes Textdokument eine klare und einheitliche Struktur aufweisen. Dies beinhaltet eine logische Anordnung von Informationen, die Verwendung von Überschriften und Unterüberschriften zur Strukturierung des Textes sowie die Anwendung von Absätzen, Aufzählungszeichen oder nummerierten Listen zur Organisation des Inhalts. Bei der Strukturierung werden auch Formatvorlagen für Überschriften und Unterüberschriften genutzt.</p><p>Zudem sollte in einem gut formatierten Dokument die Schriftart und -größe einheitlich und gut lesbar sein. Auch die Abstände zwischen Textelementen sollten überlegt ein- und einheitlich umgesetzt werden – das gilt insbesondere für die Abstände zwischen Absätzen, die Textausrichtung (linksbündig, rechtsbündig, zentriert oder Blocksatz) und andere Formatierungsoptionen gezielt eingesetzt werden. Zitate, Referenzen und Fußnoten sollten ebenfalls korrekt und konsistent formatiert sein. Die gute Formatierung eines Textes sorgt unabhängig von der Länge des Dokuments für ein einheitliches Erscheinungsbild.</p><p>Eine einheitliche und übersichtliche Formatierung erreicht man insbesondere in längeren Textdokumenten durch die Verwendung von Formatvorlagen. Sie ermöglichen nicht nur die Automatisierung verschiedener Arbeitsschritte (z.B. Nummerierung von Überschriften, Erstellung eines Inhaltsverzeichnisses, …) sondern bewirken ausserdem, dass das Erscheinungsbild des gesamten Dokuments konsistent und mit wenigen Klicks geändert werden kann. </p><p> Ein wichtiges Prinzip ist, dass in einem gut formatierten Textdokument die Struktur und Darstellung des Textes getrennt sind. Leerzeilen oder aufeinanderfolgende Leerschläge in einem Dokument sind ein guter Indikator dafür, dass dieses Prinzip nicht verstanden wurde: Eingesetzt werden sie meist, um Abstände zwischen Textelementen zu generieren, also aus Gründen der Darstellung, umgesetzt wird das jedoch durch das Einfügen von Inhalten (Zeichen). Eine saubere Formatierung verwendet stattdessen die entsprechenden Formatierungseigenschaften (z.B. «Abstand nach») und kommt so zu einer wesentlich flexibleren und einheitlicheren Lösung.</p>",
+    "question": "Welche Aussagen über gute Formatierung eines Textdokuments sind richtig?",
+    "options": [
+      {
+        "text": "In einem gut formatierten Dokument sind Leerzeilen unnötig",
+        "correct": true
+      },
+      {
+        "text": "In einem gut formatierten Textdokument lässt sich das gesamte Erscheinungsbild mit wenigen Klicks konsistent abändern",
+        "correct": true
+      },
+      {
+        "text": "Bei einem gut formatierten Textdokument lässt sich das gesamte Erscheinungsbild mit wenigen Klicks konsistent abändern",
+        "correct": true
+      },
+      {
+        "text": "Ein gut formatiertes Textdokument sollte möglichst viele verschiedene Schriftgrößen und -stile enthalten, um visuell ansprechend zu sein.",
+        "correct": false
+      },
+      {
+        "text": "Gute Formatierung ist in längeren Textdokumenten weniger relevant",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": "Zip-Dateien",
+    "group": "Grundlagen",
+    "explanation": "<p>Zip-Dateien sind komprimierte Daten in einer Datei mit der Endung .zip. Eine Zip-Datei ist meist ein komprimierter Ordner, dieser kann eine oder mehrere Dateien und auch weitere Unterordner enthalten. Das Zippen dient dazu, durch Komprimierung der enthaltenen Information den Speicherplatz zu reduzieren und/oder die Übertragung von Dateien zu erleichtern, indem mehreren Dateien und Ordner in eine einzige Datei verpackt werden.</p><p>Im Datei-Explorer (unter Windows) wird eine Vorschau des Inhalts gezeigt, wenn man einen Doppelklick auf eine Zip-Datei ausführt. Um mit den enthaltenen Daten zu arbeiten, muss die Zip-Datei jedoch entpackt (entzippt/extrahiert) werden, z.B. mit den vom Betriebssystem bereitgestellten Möglichkeiten (im Kontextmenu) oder über spezialisierte, herunterladbare Programme für das Packen und Entpacken von Ordnern bzw. Dateien. </p><p>Im Unterschied zu Windows-Systemen werden Zip-Dateien im Finder (unter MacOS) durch einen Doppelklick direkt entzippt, es gibt keine «Vorschau» der noch verpackten Inhalte.</p><p>Die Kompression von Zip-Dateien funktioniert besonders gut, wenn Text-Dateien enthalten sind. Einige Dateiformate, wie .docx (Word) und .pptx (Powerpoint), sind in Wirklichkeit gezippte Ordner.</p>",
+    "question": "Welche Aussagen über Zip-Dateien sind richtig?",
+    "options": [
+      {
+        "text": "Im Datei-Explorer (unter Windows) wird eine Vorschau des Inhalts gezeigt, wenn man einen Doppelklick auf eine Zip-Datei ausführt.",
+        "correct": true
+      },
+      {
+        "text": "Man kann mehrere Dateien zu einer Zip-Datei machen.",
+        "correct": true
+      },
+      {
+        "text": "Die Kompression von Zip-Dateien funktioniert besonders gut, wenn Videos enthalten sind.",
+        "correct": false
+      },
+      {
+        "text": "Um eine Zip-Datei zu erstellen, braucht es einen Rechtsklick im Datei-Explorer (unter Windows).",
+        "correct": true
+      },
+      {
+        "text": "Man kann mehrere Ordner zu einer Zip-Datei machen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "topic": "Ordnerstruktur",
+    "group": "Grundlagen",
+    "explanation": "<p>Die Ordnerstruktur auf einer Festplatte beschreibt die logische Organisation und Hierarchie von Dateien und Ordnern, die vom Betriebssystem des Computers verwaltet wird. Diese Struktur erlaubt es uns, Dateien und Ordner auf eine übersichtliche und systematische Weise zu organisieren und zu navigieren. Das ist ähnlich wie das System, das in einem Büro verwendet wird, wo Dokumente in Ordnern abgelegt und diese Ordner in Schubladen oder Schränken gespeichert werden. In der digitalen Welt sind diese \"Schränke\" die Stammverzeichnisse (Root-Verzeichnisse) und die \"Schubladen\" und \"Ordner\" sind Unterordner, die weitere Unterordner und Dateien enthalten können. </p><p>In dieser logischen Hierarchie ist jedes Element - ob Datei oder Ordner - eindeutig durch seinen Pfad identifizierbar. Der Pfad besteht aus einer Abfolge von Verzeichnissen, die vom Stammverzeichnis (Root-Verzeichnis) zur spezifischen Datei oder zum spezifischen Ordner führen. </p><p>Wichtig ist dabei zu verstehen, dass diese logische Ordnerstruktur nicht unbedingt die physische Speicherung von Daten auf der Festplatte widerspiegelt. Während die Ordnerstruktur uns eine geordnete, hierarchische Ansicht der Daten bietet, können die tatsächlichen Daten auf der Festplatte verteilt und in verschiedensten Bereichen des physischen Speichermediums abgelegt sein. Die Verwaltung dieser physischen Speicherung ist Aufgabe des Betriebssystems und für den Benutzer in der Regel unsichtbar.Ein gutes Verständnis der Ordnerstruktur ist unerlässlich für eine effektive und effiziente Nutzung eines Computers. Es erleichtert das Finden, Organisieren und Verwalten von Dateien und Programmen. Darüber hinaus trägt es dazu bei, das Verständnis für die Funktionsweise von Betriebssystemen zu vertiefen, insbesondere in Bezug auf die Verwaltung von Softwareinstallationen und Datensicherung. Mit Kenntnissen über die Ordnerstruktur kann man Daten und Anwendungen leichter organisieren, den Speicherplatz besser nutzen und Probleme bei der Fehlersuche effizienter lösen. </p>quest",
+    "question": "Welche Aussagen zur Ordnerstruktur einer Festplatte sind richtig?",
+    "options": [
+      {
+        "text": "Die Ordnerstruktur entspricht exakt der physischen Speicherung der Bits auf der Festplatte.",
+        "correct": false
+      },
+      {
+        "text": "Unterordner können in der Ordnerstruktur hierarchisch untergeordnete Kategorien bilden.",
+        "correct": true
+      },
+      {
+        "text": "Eine logische Strukturierung der Ordner in der Ordnerstruktur erleichtert die Navigation und den Zugriff auf Dateien.",
+        "correct": true
+      },
+      {
+        "text": "Eine korrekte Ordnerstruktur erleichtert das Auffinden und Organisieren von Dateien.",
+        "correct": true
+      },
+      {
+        "text": "Die Ordnerstruktur einer Festplatte kann sowohl persönliche als auch systemrelevante Dateien enthalten.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "topic": "Textgestaltung",
+    "group": "Präsentationen",
+    "explanation": "<p>Animationen in Präsentationen können dazu verwendet werden, um Aufmerksamkeit zu erregen, Informationen sequenziell zu präsentieren oder komplexe Themen visuell zu erläutern. Sie können Bewegung, Farbveränderungen, Überblendungen und viele andere visuelle Effekte in eine Präsentation einbringen. Allerdings sollten Animationen mit Bedacht eingesetzt werden. Übermäßiger oder unsachgemäßer Gebrauch von Animationen kann dazu führen, dass die Präsentation unprofessionell wirkt und das Publikum ablenkt, statt es zu fesseln.</p><p>Es ist wichtig, dass Animationen einen Zweck erfüllen und nicht nur als schmückendes Beiwerk verwendet werden. Eine gut durchdachte und richtig eingesetzte Animation kann dazu beitragen, eine Botschaft zu verstärken oder einem Konzept Klarheit zu verleihen. Umgekehrt kann eine unnötige oder übermäßige Animation das Verständnis behindern und die Botschaft der Präsentation verwässern.</p>",
+    "question": "Welche Aussagen zum Einsatz von Animationen in Präsentationen sind richtig?",
+    "options": [
+      {
+        "text": "Schnelle und blitzende Animationen sind immer effektiv, um die Aufmerksamkeit des Publikums zu erregen.",
+        "correct": false
+      },
+      {
+        "text": "Es ist wichtig, konsistente Animationseffekte in der gesamten Präsentation zu verwenden.",
+        "correct": true
+      },
+      {
+        "text": "Jeder Punkt oder jedes Bild sollte immer animiert werden, um die Aufmerksamkeit zu halten.",
+        "correct": false
+      },
+      {
+        "text": "Zu viele Animationen können das Publikum ablenken und die Präsentation unübersichtlich machen.",
+        "correct": true
+      },
+      {
+        "text": "Animationen sollten dazu beitragen, die Kernbotschaft einer Präsentation zu verstärken, nicht sie zu überdecken.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "topic": "Speichermedien",
+    "group": "Grundlagen",
+    "explanation": "<p>Speichermedien sind essentielle Komponenten eines Computers und dienen zur Speicherung von Daten. Sie können in verschiedene Typen unterteilt werden, darunter Register, Arbeitsspeicher (RAM), und verschiedene Arten von Festplatten.</p><p>Register sind sehr kleine und extrem schnelle Speicherbänke, die direkt in die CPU eingebaut sind. Sie sind flüchtige Speicher, was bedeutet, dass die Daten verloren gehen, wenn die Stromversorgung unterbrochen wird.</p><p>Der Arbeitsspeicher eines Computers, auch RAM, Haupt- oder Primärspeicher genannt, ist ebenfalls ein flüchtiger Speicher. Er ist für das kurzfristige Speichern von Daten verantwortlich, die gerade oder in Kürze von der CPU verarbeitet werden. Mehr Arbeitsspeicher verbessert das Multitasking und das Bearbeiten großer Dateien, z.B. Videos, hat aber keinen direkten Einfluss auf die Rechengeschwindigkeit.</p><p>USB-Sticks, SD-Karten, interne und externe Festplatten sind Beispiele für nicht-flüchtige Speichermedien. Sie behalten die gespeicherten Daten auch bei Unterbrechung der Stromversorgung bei. Mechanische HD-Festplatten sind zudem anfällig für Stösse, Magnetfelder oder das Eindringen von Verschmutzungen. Die moderneren SSDs beheben diese Schwächen und erlauben zudem noch schnellere Zugriffsgeschwindigkeiten</p><p>Ein Computer hat verschiedene Arten von Speichern, weil es eine Wechselwirkung zwischen der Kapazität und der Geschwindigkeit eines Speichermediums gibt: Die Optimierung einer dieser Eigenschaften geht zulasten der anderen.</p>",
+    "question": "Welche Aussagen über Speichermedien sind richtig?",
+    "options": [
+      {
+        "text": "Mehr Arbeitsspeicher verbessert das Bearbeiten grosser Dateien, z.B. Videos.",
+        "correct": true
+      },
+      {
+        "text": "Mehr Arbeitsspeicher verbessert die Rechengeschwindigkeit.",
+        "correct": false
+      },
+      {
+        "text": "Ein Computer hat verschieden Arten von Speichern, weil es eine Wechselwirkung zwischen der Kapazität und der Geschwindigkeit eines Speichermediums gibt: Die Optimierung einer dieser Eigenschaften geht zulasten der anderen",
+        "correct": true
+      },
+      {
+        "text": "Register sind Teil der CPU und ermöglichen einen schnellen Zugriff auf Daten während der Verarbeitung.",
+        "correct": true
+      },
+      {
+        "text": "SSDs gehen in starken Magnetfeldern kaputt.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "topic": "Funktionen ",
+    "group": "Tabellenkalkulation",
+    "explanation": "<p>Funktionen sind in Tabellenkalkulationsprogrammen wie Excel oder Google Sheets integrierte Tools, die den Anwendern die Berechnung, Analyse und Verarbeitung von Daten erleichtern. Sie sind wie kleine Programme oder Befehle, die innerhalb der Zellen ausgeführt werden können, um bestimmte Aufgaben zu automatisieren und komplexe Rechenoperationen effizienter zu gestalten.</p><p>Eine Funktion beginnt normalerweise mit einem Gleichheitszeichen (=) gefolgt vom Funktionsnamen und den Parametern in Klammern. Parameter sind die spezifischen Werte oder Zellbezüge, die der Funktion zur Verarbeitung übergeben werden. Sie sind notwendig, um der Funktion mitzuteilen, auf welche Daten sie sich beziehen soll und wie sie sie verarbeiten soll. In den meisten Fällen werden die Parameter durch Semikolons voneinander getrennt. </p><p>Es gibt eine Vielzahl von Funktionen, von einfachen, wie SUMME oder MITTELWERT, die Grundrechenoperationen durchführen, bis hin zu komplexeren Funktionen für statistische Analysen, Textverarbeitung oder Datums- und Zeitberechnungen. Es ist wichtig zu verstehen, dass jede Funktion spezifische Anforderungen an die Anzahl und Art der Parameter hat. Einige Funktionen benötigen gar keine Parameter (z.B. HEUTE), während andere mehrere Parameter erfordern können. Ein korrektes Verständnis der Syntax und der Anforderungen jeder Funktion ist unerlässlich, um Fehler zu vermeiden und die gewünschten Ergebnisse zu erhalten. </p>",
+    "question": "Welche Aussagen zu Funktionen sind richtig?",
+    "options": [
+      {
+        "text": "Die Funktion =WURZEL",
+        "correct": true
+      },
+      {
+        "text": "Die Funktion =MAL(A1;A2) multipliziert die Werte in Zelle A1 und A2.",
+        "correct": false
+      },
+      {
+        "text": "Die Funktion =RUNDEN(123.456;2) rundet den Wert 123.456 auf 2 Stellen vor dem Komma, also auf 100.",
+        "correct": false
+      },
+      {
+        "text": "Mit der Funktion =HEUTE() erhält man das aktuelle Datum.",
+        "correct": true
+      },
+      {
+        "text": "Die Funktion =MIN(A1:A10) gibt den niedrigsten Wert aus den ersten zehn Zellen von Spalte A zurück.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "topic": "Formeln ",
+    "group": "Tabellenkalkulation",
+    "explanation": "<p>Formeln sind ein integraler Bestandteil eines jeden Tabellenkalkulationsprogramms, wie Excel oder Google Sheets. Sie ermöglichen es den Benutzern, Berechnungen durchzuführen, basierend entweder auf konkreten, direkt in der Formel angegebenen Werten oder auf den Werten, die in bestimmten Zellen gespeichert sind. Eine Formel beginnt mit einem Gleichheitszeichen (=), gefolgt von einer Kombination von Zahlen, Zellbezügen, Operatoren und Funktionen. Eine Formel ist also eine u.u. auch sehr komplizierte Berechnung, deren Ergebnis dann zum Inhalt der Zelle wird. </p><p>Einige der grundlegenden Operatoren in Formeln sind Addition (+), Subtraktion (-), Multiplikation (*), und Division (/). Es gibt auch eine Vielzahl von Funktionen, die in Formeln verwendet werden können, um spezifischere oder komplexere Berechnungen durchzuführen. Einige Formeln können so einfach sein wie das Addieren von zwei Zahlen, während andere viel komplexer sind und mehrere Funktionen und Zellbezüge verwenden. In Tabellenkalkulationsprogrammen ist es sehr üblich, dass in Formeln mit Zellbezügen gearbeitet wird, weil die Rechnungen erst so flexibel und übertragbar werden.</p>",
+    "question": "Welche Aussagen zu Formeln sind richtig?",
+    "options": [
+      {
+        "text": "Die Formel =2*A1 verdoppelt den Wert in Zelle A1.",
+        "correct": true
+      },
+      {
+        "text": "Formeln müssen immer eine Funktion enthalten, um gültig zu sein.",
+        "correct": false
+      },
+      {
+        "text": "Formeln können (ggf. auch mehrere) Funktionen enthalten",
+        "correct": true
+      },
+      {
+        "text": "Die Formel =(B2-B1)/B1 berechnet die prozentuale Veränderung zwischen den Werten in Zelle B1 und B2.",
+        "correct": true
+      },
+      {
+        "text": "Die Formel =A3/2 teilt den Wert in Zelle A3 durch 2.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "topic": "Automatisierung ",
+    "group": "Textverarbeitung",
+    "explanation": "<p>Die Automatisierung ist ein Schlüsselmerkmal von modernen Textverarbeitungsprogrammen wie Microsoft Word und Google Docs. Sie ermöglicht es Benutzern, verschiedene Aufgaben schneller und effizienter zu erledigen, und reduziert das Risiko von Fehlern und Unstimmigkeiten.</p><p>Zu den häufigsten automatisierten Funktionen gehören das Erstellen von Inhaltsverzeichnissen, Deckblättern und Abbildungsverzeichnissen, das automatische Nummerieren von Kapiteln, Zeilen und Seiten, sowie die automatische Zählung von Wörtern. Diese Funktionen basieren in der Regel auf den im Dokument verwendeten Formatvorlagen und können mit nur wenigen Klicks aktualisiert werden.</p><p>Die automatische Rechtschreibprüfung ist ebenfalls eine grundlegende Funktion in Textverarbeitungsprogrammen, die dabei hilft, Tipp- und Schreibfehler zu identifizieren. Einige Programme bieten auch Funktionen zur automatischen Grammatikprüfung und zur Korrektur häufiger Tippfehler.</p><p>Quellenverwaltung und die Erstellung von Literaturverzeichnissen können ebenfalls automatisiert werden, was besonders nützlich ist für akademische und wissenschaftliche Arbeiten. Darüber hinaus werden Querverweise und Links in einem Dokument automatisch aktualisiert, wenn sich die zugehörigen Inhalte ändern.</p><p>Es ist wichtig zu beachten, dass automatisch generierte Inhalte in der Regel grau hinterlegt sind, wenn man sie anklickt, und automatisch aktualisiert werden, wenn das Dokument geöffnet wird oder wenn bestimmte Aktionen ausgeführt werden. Änderungen an diesen Inhalten sollten vermieden werden, da sie bei der nächsten Aktualisierung überschrieben werden.</p>",
+    "question": "Welche Aussagen zur Automatisierung in Textverarbeitungsprogrammen sind richtig?",
+    "options": [
+      {
+        "text": "Die Verwaltung von Quellen kann automatisiert werden",
+        "correct": true
+      },
+      {
+        "text": "Automatische Korrekturen von Grammatik und Rechtschreibung sind immer 100% genau",
+        "correct": false
+      },
+      {
+        "text": "Die Erstellung eines Literaturverzeichnisses kann automatisiert werden",
+        "correct": true
+      },
+      {
+        "text": "Ein automatisch erstelltes Inhaltsverzeichnis ist nur korrekt, wenn sich Kapitelüberschriften später nicht mehr ändern",
+        "correct": false
+      },
+      {
+        "text": "Zeilen können automatisch nummeriert werden",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "topic": "Datei-Uploads",
+    "group": "Grundlagen",
+    "explanation": "<p>Ein Datei-Upload bezeichnet den Vorgang, bei dem eine Datei von einem lokalen Speicherort auf einen externen Speicherort übertragen wird. Dies kann beispielsweise der Transfer einer Datei vom lokalen Computer zu einem anderen Computer oder Server sein, oft um sie für andere Benutzer zugänglich zu machen. Dies ist ein gängiger Vorgang beim Teilen von Dateien über Online-Plattformen, E-Mail-Anhänge, Cloud-Speicher oder File-Hosting-Dienste.</p><p>Der Datei-Upload ist ein grundlegender Bestandteil vieler Webanwendungen, bei dem Benutzer Dateien hochladen können, um sie mit anderen zu teilen oder online zu speichern. Es handelt sich um einen wichtigen Bestandteil des Datenaustauschs und der Kollaboration, bei dem Dateien über verschiedene Plattformen und Netzwerke hinweg übertragen werden können.</p><p>Das Verständnis des Datei-Upload-Prozesses ist wichtig, um effektiv mit digitalen Ressourcen umgehen und Daten sicher und effizient übertragen zu können. Es hilft auch, die Funktionsweise von Netzwerken und Webanwendungen besser zu verstehen und die Möglichkeiten der digitalen Zusammenarbeit zu nutzen.</p>",
+    "question": "Welche Aussagen über Datei-Uploads sind richtig?",
+    "options": [
+      {
+        "text": "Beim Datei-Upload handelt es sich um den Prozess, bei dem eine Datei von einem lokalen Gerät auf einen entfernten Server übertragen wird, um sie für den Zugriff über das Internet verfügbar zu machen.",
+        "correct": true
+      },
+      {
+        "text": "Der Datei-Upload ist ein grundlegender Bestandteil vieler Webanwendungen, bei dem Benutzer Dateien hochladen können, um sie mit anderen zu teilen oder online zu speichern.",
+        "correct": true
+      },
+      {
+        "text": "Ein Datei-Upload bezeichnet den Vorgang, bei dem eine Datei von einem lokalen Speicherort auf einen externen Speicherort übertragen wird, oft um sie für andere Benutzer zugänglich zu machen.",
+        "correct": true
+      },
+      {
+        "text": "Ein Datei-Upload ist ein gängiger Vorgang beim Teilen von Dateien über Online-Plattformen, E-Mail-Anhänge, Cloud-Speicher oder File-Hosting-Dienste.",
+        "correct": true
+      },
+      {
+        "text": "Unter einem Datei-Upload versteht man das Verschieben einer Datei innerhalb des lokalen Computers oder eines Netzwerks.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "topic": "Textformate",
+    "group": "Grundlagen",
+    "explanation": "<p>Textformate sind Dateiformate, die speziell für die Speicherung von Textinformationen entwickelt wurden. Sie können einfache Textdaten (wie .txt) oder formatierten Text (wie .docx, .rtf) enthalten. Einige Textformate können auch Bilder und andere Medien enthalten.</p><p>Das .txt-Format ist das einfachste Textformat. Es enthält nur Text und keine Formatierungsinformationen. Es ist universell kompatibel und kann von nahezu jedem Texteditor geöffnet werden.</p><p>Das .rtf-Format (Rich Text Format) ermöglicht die Speicherung von Texten mit einfacher Formatierung wie Fettdruck, Kursivschrift und Unterstreichungen. Es ist weit verbreitet und wird von den meisten Textverarbeitungsprogrammen unterstützt.</p><p>Das .docx-Format ist ein XML-basiertes Dateiformat, das von Microsoft für Word-Dokumente entwickelt wurde. Es ist Teil des Office Open XML-Standards (auch bekannt als OOXML). .docx-Dateien können komplexe Formatierungen, Bilder, Diagramme und andere Medien enthalten. Sie sind jedoch hauptsächlich mit Microsoft Word kompatibel, obwohl andere Textverarbeitungsprogramme sie oft öffnen können.</p>",
+    "question": "Welche Aussagen über Textformate sind richtig?",
+    "options": [
+      {
+        "text": "Das .docx-Format ist ein XML-basiertes Dateiformat, das von Microsoft für Word-Dokumente entwickelt wurde.",
+        "correct": true
+      },
+      {
+        "text": "Das Format .exe ist zum Speichern von Text geeignet.",
+        "correct": false
+      },
+      {
+        "text": "Das Format .odt ist zum Speichern von Text geeignet.",
+        "correct": true
+      },
+      {
+        "text": "Das .rtf-Format ermöglicht die Speicherung von Texten mit einfacher Formatierung.",
+        "correct": true
+      },
+      {
+        "text": "Das .docx-Format kann nur von Microsoft Word geöffnet werden.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "topic": "Lizenzformen von Software",
+    "group": "Grundlagen",
+    "explanation": "<p>Eine Softwarelizenz ist ein rechtliches Instrument, das die Nutzung oder Weiterverteilung von Software regelt. Alle Software ist urheberrechtlich geschützt, sowohl in Form von Quellcode als auch von Objektcode. Autoren urheberrechtlich geschützter Software können ihre Software der Öffentlichkeit zur Verfügung stellen und dabei über die Lizenz festlegen, wer die Software in welcher Art nutzen, verändern, weitergeben oder sogar selbst lizensieren darf.</p><p>Es gibt verschiedene Arten von Softwarelizenzen, darunter proprietäre Softwarelizenzen und freie bzw. Open-Source-Softwarelizenzen (FOSS). Der wesentliche konzeptionelle Unterschied zwischen den beiden besteht in der Gewährung von Rechten zur Modifizierung und Wiederverwendung eines vom Kunden erworbenen Softwareprodukts: FOSS-Softwarelizenzen gewähren dem Kunden beide Rechte und liefern daher den modifizierbaren Quellcode zusammen mit der Software (\"Open-Source\"), während proprietäre Software in der Regel diese Rechte nicht lizenziert und daher den Quellcode verbirgt (\"Closed Source\").</p><p>Einige Beispiele für FOSS-Lizenzen sind die GNU General Public License (GPL), die BSD-Lizenz und die MIT-Lizenz. Proprietäre Softwarelizenzen sind beispielsweise die Lizenz für Microsoft Windows oder Adobe Photoshop. Shareware, Freeware, Courseware, Trialware, Copyleft-Software und Creative Commons sind weitere Bezeichnungen für spezielle Lizenzen oder Arten der Nutzung von Software Lizenzen, die bestimmte Freiheiten und Einschränkungen bieten.</p>",
+    "question": "Welche Aussagen über Lizenzformen von Software sind richtig?",
+    "options": [
+      {
+        "text": "Freeware ist eine Lizenzform von Software.",
+        "correct": true
+      },
+      {
+        "text": "Creative Commons ist eine Lizenzform von Software.",
+        "correct": true
+      },
+      {
+        "text": "Die Lizenz für Microsoft Windows ist ein Beispiel für eine proprietäre Softwarelizenz.",
+        "correct": true
+      },
+      {
+        "text": "Die GNU General Public License (GPL) ist ein Beispiel für eine FOSS-Lizenz.",
+        "correct": true
+      },
+      {
+        "text": "Spyware ist eine Lizenzform von Software.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "topic": "Textgestaltung",
+    "group": "Präsentationen",
+    "explanation": "<p>Die Textgestaltung in Präsentationen spielt eine entscheidende Rolle, um Informationen effektiv zu vermitteln und das Publikum zu fesseln. Die Wahl der richtigen Schriftart, Größe, Farbe und der Art und Weise, wie der Text auf den Folien präsentiert wird, kann den Unterschied zwischen einer überzeugenden und einer langweiligen Präsentation ausmachen. Es ist wichtig, den Text auf den Folien so zu gestalten, dass er die Hauptbotschaften unterstützt, ohne das Publikum zu überwältigen oder abzulenken.</p><p>Während der Text eine zentrale Rolle in jeder Präsentation spielt, sollte er in der Regel als Ergänzung zum gesprochenen Wort dienen und nicht als Hauptinformationsquelle. Zu viel Text auf einer Folie kann das Publikum überwältigen und die Aufmerksamkeit vom Sprecher ablenken. Daher ist es wichtig, den Text auf den Folien zu minimieren und sich auf Schlüsselinformationen und -punkte zu konzentrieren. Die Gestaltung des Textes, einschließlich der Wahl der Schriftart, Größe und Farbe, sollte auch konsistent sein, um eine einheitliche und professionelle Erscheinung zu gewährleisten.</p>",
+    "question": "Welche Aussagen zur Gestaltung von Text in Präsentationen sind richtig?",
+    "options": [
+      {
+        "text": "Der Text auf Folien dient vor allem der Orientierung – in der Regel sollte er weit weniger ausführlich sein als der Vortrag.",
+        "correct": true
+      },
+      {
+        "text": "Hintergrundbilder oder -farben sollten so komplex wie möglich sein, um das Interesse aufrechtzuerhalten.",
+        "correct": false
+      },
+      {
+        "text": "Vermeide es, zu viele Schriftarten in einer Präsentation zu verwenden, um Konsistenz zu gewährleisten.",
+        "correct": true
+      },
+      {
+        "text": "Kontrastreiche Farbkombinationen, wie Schwarz auf Weiß oder Weiß auf Dunkelblau, verbessern die Lesbarkeit des Textes.",
+        "correct": true
+      },
+      {
+        "text": "Überschriften sollten deutlich von Unterüberschriften und Haupttext unterschieden werden, um eine klare Hierarchie zu zeigen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "topic": "Zellformate",
+    "group": "Tabellenkalkulation",
+    "explanation": "<p>Ein grundlegendes Merkmal von Tabellenkalkulationsprogrammen ist die Möglichkeit, Zellinhalte unterschiedlich zu formatieren. Das bedeutet, dass derselbe Wert in einer Zelle auf verschiedene Arten dargestellt werden kann, je nachdem, welches Format angewendet wird. So kann beispielsweise die Zahl 0.1 als 10% oder die Zahl 1 als 01.01.1900 dargestellt werden. Diese Formatierungen beeinflussen nur die Darstellung des Wertes und nicht den eigentlichen Wert selbst.</p> <p>Es gibt eine Vielzahl von vordefinierten Zellformaten, von denen viele auf gemeinsame geschäftliche oder alltägliche Bedürfnisse zugeschnitten sind. Dazu gehören Währungsformate, Prozentformate, Datums- und Zeitformate, wissenschaftliche Formate und viele andere. Darüber hinaus bieten Tabellenkalkulationsprogramme in der Regel auch die Möglichkeit, benutzerdefinierte Formate zu erstellen, sodass Benutzer die Anzeige von Zellinhalten genau an ihre Anforderungen anpassen können.</p> <p>Wichtig zu verstehen ist, dass Zellformatierungen nicht den eigentlichen Wert oder Inhalt der Zelle ändern. Wenn beispielsweise die Zahl 2500 mit einem Währungsformat angezeigt wird, wird sie möglicherweise als 2.500,00 € dargestellt, aber ihr tatsächlicher Wert in der Zelle bleibt 2500. Dies ermöglicht es, dass Berechnungen mit den eigentlichen Werten und nicht mit den formatierten Darstellungen durchgeführt werden.</p>",
+    "question": "Welche Aussagen zu Zellformaten sind richtig?",
+    "options": [
+      {
+        "text": "Es gibt verschieden Versionen von Datumsformaten, bsw. kann der Monat als Zahl oder als ausgeschriebener Name angezeigt werden",
+        "correct": true
+      },
+      {
+        "text": "Wenn man 1.1.2020 in eine Zelle schreibt, wird diese automatisch als Datum formatiert",
+        "correct": true
+      },
+      {
+        "text": "Wenn in einer Zelle 2.500,00 € steht, könnte sie in Wirklichkeit die Zahl 2500 (formatiert als Währung) enthalten.",
+        "correct": true
+      },
+      {
+        "text": "Wenn in einer Zelle 1.000 steht, handelt es sich immer um das Datum 1. Oktober.",
+        "correct": false
+      },
+      {
+        "text": "Durch Zellformatierung kann man negative Zahlen in Rot und positive in Grün darstellen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "topic": "Gängige Shortcuts",
+    "group": "Textverarbeitung",
+    "explanation": "<p>Shortcuts, auch Tastaturkürzel genannt, sind Kombinationen von Tasten, die eine bestimmte Aktion in einem Softwareprogramm auslösen. Sie sind dazu da, häufige Aufgaben zu beschleunigen und die Bedienung von Programmen effizienter zu gestalten. In vielen Programmen, insbesondere in Textverarbeitungsprogrammen, sind bestimmte Shortcuts weit verbreitet und standardisiert.</p><p>CTRL + S (MAC: CMD + S) wird in der Regel verwendet, um das aktuelle Dokument zu speichern. CTRL + C (MAC: CMD + C) und CTRL + X (MAC: CMD + X) werden verwendet, um Elemente zu kopieren bzw. auszuschneiden. CTRL + V (MAC: CMD + V) fügt den Inhalt der Zwischenablage an der aktuellen Position ein. CTRL + Z (MAC: CMD + Z) macht die letzte Aktion rückgängig, und CTRL + A (MAC: CMD + A) markiert den gesamten Text oder alle Elemente.</p><p>Es gibt auch spezielle Shortcuts für Such- und Ersetzungsfunktionen, das Öffnen von Dialogfenstern und viele andere Funktionen. Die genaue Wirkung eines Shortcuts kann von Programm zu Programm variieren, und manche Programme erlauben es den Benutzern, ihre eigenen Shortcuts zu definieren.</p>",
+    "question": "Welche Aussagen zu gängigen Shortcuts sind richtig?",
+    "options": [
+      {
+        "text": "CTRL + C (MAC: CMD + C) kopiert markierte Elemente auf den Desktop.",
+        "correct": false
+      },
+      {
+        "text": "CTRL + R (MAC: CMD + R) schaltet die Rechtschreibprüfung ein.",
+        "correct": false
+      },
+      {
+        "text": "CTRL + K (MAC: CMD + K) kopiert markierte Elemente in die Zwischenablage.",
+        "correct": false
+      },
+      {
+        "text": "CTRL + S (MAC: CMD + S) öffnet die Suche.",
+        "correct": false
+      },
+      {
+        "text": "CTRL + F (MAC: CMD + F) öffnet das Suchfenster.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": "Audioformate",
+    "group": "Grundlagen",
+    "explanation": "<p>Audioformate sind Dateiformate, die zur Speicherung von Audiosignalen wie Tönen oder Liedern verwendet werden. Es gibt viele verschiedene Audioformate, die sich in Bezug auf Kompressionsrate, Klangqualität und andere Eigenschaften unterscheiden.</p><p>Einige der gebräuchlichsten Audioformate sind MP3, WAV, FLAC, AAC, OGG und AIFF. MP3 ist ein weit verbreitetes Format, das eine starke Kompression bietet, aber einige Klangqualität verliert. WAV ist ein unkomprimiertes Format, das eine hohe Klangqualität bietet, aber mehr Speicherplatz benötigt. FLAC ist ein verlustfreies Format, das eine hohe Klangqualität und eine moderate Kompression bietet.</p><p>Es ist wichtig zu beachten, dass nicht alle Audioformate auf allen Geräten oder in allen Anwendungen unterstützt werden. Die Wahl des richtigen Audioformats hängt von den spezifischen Anforderungen der jeweiligen Situation ab.</p>",
+    "question": "Welche Aussagen über Audioformate sind richtig?",
+    "options": [
+      {
+        "text": "MP3 ist ein Audioformat.",
+        "correct": true
+      },
+      {
+        "text": "OGG ist ein Audioformat.",
+        "correct": true
+      },
+      {
+        "text": "Die Wahl des richtigen Audioformats hängt von den spezifischen Anforderungen der jeweiligen Situation ab.",
+        "correct": true
+      },
+      {
+        "text": "GIF ist ein Audioformat.",
+        "correct": false
+      },
+      {
+        "text": "JPG ist ein Audioformat.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "topic": "Folienmaster",
+    "group": "Präsentationen",
+    "explanation": "<p>Der Folienmaster ist ein wesentliches Element in Präsentationsprogrammen wie Microsoft PowerPoint oder Google Slides. Er fungiert als Vorlage oder Blaupause für alle Folien in einer Präsentation und definiert das grundlegende Layout, das Design und die Formatierung. Dazu gehören Elemente wie Schriftart, Schriftgröße, Farbschemata, Hintergründe, Platzierung und Formatierung von Textfeldern und andere Objekte. </p><p>Änderungen, die am Folienmaster vorgenommen werden, wirken sich auf alle Folien aus, die diesen Master verwenden. Das ermöglicht eine einheitliche und konsistente Gestaltung der gesamten Präsentation. Es ist auch möglich, mehrere Folienmaster in einer Präsentation zu haben, was besonders nützlich ist, wenn verschiedene Abschnitte unterschiedliche Designs oder Layouts erfordern. </p><p>Ein gutes Verständnis des Folienmasters ist entscheidend für eine effiziente und professionelle Präsentationsgestaltung. Es ermöglicht Benutzern, schnell und einfach ein einheitliches Design über eine Vielzahl von Folien hinweg zu erstellen und zu ändern. Es erleichtert auch die Wartung und Aktualisierung von Präsentationen, da Änderungen an einem zentralen Ort vorgenommen werden können und sich automatisch auf alle Folien auswirken. </p>",
+    "question": "Welche Aussagen zum Folienmaster sind richtig?",
+    "options": [
+      {
+        "text": "Der Folienmaster bestimmt den Inhalt jeder einzelnen Folie.",
+        "correct": false
+      },
+      {
+        "text": "Das Verständnis des Folienmasters ist wichtig für eine effiziente und professionelle Präsentationsgestaltung.",
+        "correct": true
+      },
+      {
+        "text": "Änderungen am Folienmaster können nicht rückgängig gemacht werden.",
+        "correct": false
+      },
+      {
+        "text": "Jede Folie in einer Präsentation muss einen eigenen, einzigartigen Folienmaster haben.",
+        "correct": false
+      },
+      {
+        "text": "Es ist möglich, mehrere Folienmaster in einer Präsentation zu haben.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": "Auflösungen",
+    "group": "Grundlagen",
+    "explanation": "<p>Die Auflösung ist ein Maß für die Detailgenauigkeit einer Darstellung und wird in verschiedenen Kontexten unterschiedlich gemessen. Bei Bildschirmen und digitalen Fotos misst man die Auflösung in Pixel. Die Auflösung eines Bildschirms gibt an, wie viele Pixel in der Breite und Höhe dargestellt werden können, z.B. 1920 x 1080 für Full HD. Die Auflösung eines digitalen Fotos beschreibt die Anzahl der Pixel, die für das Bild gespeichert sind, z.B. 4000 x 3000 Pixel = 12 Megapixel.</p><p>Die Auflösung eines Druckers wird in der Regel in dpi (Dots per Inch) oder ppm (Punkte pro Millimeter) gemessen. Das macht unter anderem deswegen Sinn, weil man bei einem Drucker einstellen kann, wie nach aneinander die Bildpunkte gedruckt werden sollen, während der Abstand der Pixel in einem Bildschirm physisch gegeben und unveränderlich ist.  Die Druckauflösung beeinflusst die Detailgenauigkeit und Schärfe der gedruckten Bilder und Texte. Eine höhere Auflösung bedeutet mehr Pixel pro Flächeneinheit, deswegen braucht ein Bild sehr viele Megapixel, wenn man es mit guter Qualität (> 200 dpi) und grossformatig ausdrucken möchte.  </p><p>Die Auflösung ist ein wichtiger Faktor bei der Auswahl eines Monitors, Druckers oder einer Kamera, da sie die Bildqualität und Detailgenauigkeit beeinflusst. Es ist jedoch zu beachten, dass die Auflösung moderner Bildschirme meist höher ist als die des menschlichen Auges – noch mehr Pixel machen also für die Wahrnehmung keinen Unterschied. Zudem löst das menschliche Auge Tintenkleckse feiner auf als Lichtpunkte (Pixel), weshalb ein Drucker für dieselbe Fläche 3-4 Mal mehr Bildpunkte als ein Bildschirm benötigt. Das ist gleichzeitig eine der Erklärungen dafür, dass die meisten Kameras sehr viel mehr Pixel aufnehmen, als ein Bildschirm als Vollbild darstellen kann.</p>",
+    "question": "Welche Aussagen über Auflösungen sind richtig?",
+    "options": [
+      {
+        "text": "Bei der Auswahl eines Monitors, Druckers oder Kameras ist die Auflösung ein wichtiger Faktor, der die Bildqualität und Detailgenauigkeit beeinflusst.",
+        "correct": true
+      },
+      {
+        "text": "Die Auflösung eines digitalen Fotos misst man in Pixeln.",
+        "correct": true
+      },
+      {
+        "text": "Die Auflösung eines Druckers wird in Zoll angegeben.",
+        "correct": false
+      },
+      {
+        "text": "Die Auflösung eines Druckers gibt an, wie viele Zoll das gedruckte Bild auf Papier einnimmt.",
+        "correct": false
+      },
+      {
+        "text": "Die Auflösung eines digitalen Fotos beschreibt die Anzahl der Pixel, die das Bild enthält, z.B. 12 Megapixel.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "topic": "Auto-Ausfüllen ",
+    "group": "Tabellenkalkulation",
+    "explanation": "<p>Die Auto-Ausfüll-Funktion in Tabellenkalkulationsprogrammen wie Excel oder Google Sheets ist ein leistungsstarkes Werkzeug, das es den Benutzern ermöglicht, Daten automatisch basierend auf identifizierten Mustern oder Reihenfolgen zu vervollständigen. Indem man die Quadratische Markierung der rechten unteren Ecke einer Auswahl verschiebt, kann man eine vorherige Eingabe über einen Zellbereich hinweg wiederholen oder fortsetzen. Zum Beispiel, wenn man \"Jan\" und \"Feb\" in aufeinanderfolgende Zellen eingibt und dann die Auto-Ausfüll-Funktion nutzt, wird die Sequenz für die weiteren Monate automatisch fortgesetzt.</p> <p>Die Funktion ist nicht nur auf Monate oder Tage der Woche beschränkt. Sie erkennt auch numerische Reihenfolgen und benutzerdefinierte Listen. Wenn im markierten Bereich kein Muster erkannt wird, werden die Werte kopiert – das ist bspw. dann notwendigerweise der Fall, wenn nur eine einzige Zelle markiert wurde. Nach dem automatischen Ausfüllen kann der Benutzer die Ergebnisse überprüfen und gegebenenfalls über ein Dropdown-Menü Anpassungen vornehmen.</p> <p>Das Verständnis der Auto-Ausfüll-Funktion und ihrer Möglichkeiten kann die Effizienz bei der Arbeit mit Tabellenkalkulationsprogrammen erheblich steigern, da es zeitraubende manuelle Eingaben reduziert und die Genauigkeit der Daten erhöht.</p>",
+    "question": "Welche Aussagen zum Auto-Ausfüllen sind richtig?",
+    "options": [
+      {
+        "text": "Das automatische Ausfüllen erfordert die Erweiterung einer Auswahl (Zelle oder Zellbereich) durch Verschieben der Quadratischen Markierung der rechten unteren Ecke der Auswahl.",
+        "correct": true
+      },
+      {
+        "text": "Beim automatischen Ausfüllen entsprechen die eingefüllten Werte der wahrscheinlichsten Fortführung der Reihe im markierten Bereich.",
+        "correct": true
+      },
+      {
+        "text": "Das automatische Ausfüllen berücksichtigt im markierten Zellbereich erkannte Muster, um die fortlaufenden Zellen entsprechend zu füllen.",
+        "correct": true
+      },
+      {
+        "text": "Auto-Ausfüllen generiert immer neue Daten, ohne Rücksicht auf bestehende Muster.",
+        "correct": false
+      },
+      {
+        "text": "Das Auto-Ausfüllen funktioniert nur mit numerischen Werten.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "topic": "Speichergrössen",
+    "group": "Grundlagen",
+    "explanation": "<p>Die Speichergröße und -einheit bezeichnen das Volumen der Daten, das auf einem digitalen Speichermedium abgelegt werden kann. Diese Einheiten sind hierarchisch organisiert, wobei jede Einheit ein Vielfaches der vorherigen ist. Die grundlegende Einheit der digitalen Speicherung ist das Bit (b), was die kleinste Informationseinheit darstellt: es kann entweder 0 oder 1 sein. Acht Bits bilden ein Byte (B), das die grundlegende Einheit für die meisten Anwendungen ist. </p><p>Von hier aus geht die Hierarchie weiter mit Kilobyte (KB), Megabyte (MB), Gigabyte (GB), Terabyte (TB), Petabyte (PB), Exabyte (EB), Zettabyte (ZB) und Yottabyte (YB), wobei jede Einheit 1024-mal größer ist als die vorherige (im binären System) oder 1000-mal größer im dezimalen System. In der Praxis wird oft das dezimale System verwendet, auch wenn das binäre System streng genommen korrekter wäre. </p><p>Die Speichergröße, die ein Dokument einnimmt, hängt von vielen Faktoren ab, wie z. B. dem Dateiformat, dem Inhalt und der Komprimierung. Eine einfache Textdatei kann beispielsweise nur wenige Kilobyte groß sein, während eine hochauflösende Bilddatei mehrere Megabyte oder sogar Gigabyte einnehmen kann. Ein Film in Full-HD-Qualität kann mehrere Gigabyte Speicherplatz benötigen. </p><p>Ein gutes Verständnis von Speichergrößen und -einheiten ist unerlässlich, um den Speicherbedarf von Dateien und Anwendungen einschätzen zu können und um effektiv Speicherplatz zu verwalten. </p>",
+    "question": "Welche Aussagen zu digitale Speichergrößen und -einheiten sind richtig?",
+    "options": [
+      {
+        "text": "Ein Kilobyte im binären System besteht aus 1000 Bytes.",
+        "correct": false
+      },
+      {
+        "text": "1 KB > 1 Kb",
+        "correct": true
+      },
+      {
+        "text": "1 KB = 1 Kb",
+        "correct": false
+      },
+      {
+        "text": "Ein Byte besteht aus 8 Bits.",
+        "correct": true
+      },
+      {
+        "text": "In abgekürzten Einheiten steht ein kleines ‘b’ normalerweise für ein Bit, ein grosses ‘B’ für ein Byte\rFLASCH",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "topic": "Drucken",
+    "group": "Grundlagen",
+    "explanation": "<p>Drucken bezeichnet den Prozess der Übertragung von Texten und Bildern von einem Computer auf ein physisches Medium, meistens Papier, mithilfe eines Druckers. Drucker können verschiedene Technologien verwenden, wie Tintenstrahl, Laser, Thermotransfer, um nur einige zu nennen. Die Druckqualität wird in dpi (dots per inch) angegeben, was die Anzahl der gedruckten Punkte pro Inch (entspricht etwa 2.4 cm) darstellt.</p><p>Der Druckprozess wird durch eine Software, den Druckertreiber, gesteuert, der die Kommunikation zwischen dem Computer und dem Drucker ermöglicht. Im Druckerdialog können verschiedene Einstellungen vorgenommen werden, wie z.B. Seitenlayout, Ausrichtung, Papierquelle, Druckqualität und vieles mehr. Darüber hinaus können Drucker über verschiedene Schnittstellen an den Computer angeschlossen werden, z.B. USB, Ethernet, WLAN, etc.</p><p>Das Verständnis des Druckprozesses und der damit verbundenen Technologien ist wichtig, um qualitativ hochwertige Druckergebnisse zu erzielen und effizient mit Druckressourcen umzugehen. Es hilft auch, Probleme bei der Druckausgabe zu diagnostizieren und zu beheben.</p>",
+    "question": "Welche Aussagen zum Drucken sind richtig?",
+    "options": [
+      {
+        "text": "Beim Drucken können verschiedene Einstellungen vorgenommen werden, wie z.B. Seitenlayout, Ausrichtung, Papierquelle, etc.",
+        "correct": true
+      },
+      {
+        "text": "Die Druckqualität wird in Pixel angegeben.",
+        "correct": false
+      },
+      {
+        "text": "Über den Druckerdialog kann man meistens auch PDFs generieren.",
+        "correct": true
+      },
+      {
+        "text": "Der Druckertreiber ist eine Software, die die Kommunikation zwischen dem Computer und dem Drucker ermöglicht.",
+        "correct": true
+      },
+      {
+        "text": "Drucker können verschiedene Papierformate unterstützen, wie z.B. A4, Letter, Legal, etc.",
+        "correct": true
+      }
+    ]
+  }
+]

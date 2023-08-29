@@ -170,6 +170,11 @@ button[disabled] {
     width: 100%; /* Volle Breite des Elternelements */
     margin-bottom: 20px; /* Abstand am unteren Rand */
     box-sizing: border-box; /* Damit Padding und Border nicht zur Gesamtbreite hinzugefügt werden */
+    font-size: 1em;
+}
+
+#registration-form label:last-of-type {
+    font-size: 1.1em;
 }
 
 #registration-form input[type="checkbox"] {
@@ -237,6 +242,12 @@ button[disabled] {
     width: 90%;
   }
 
+  #registration-form label, 
+  #registration-form input, 
+  #registration-form select {
+    font-size: 1.5em;
+  }
+    
   h2 {
     font-size: 1.2em;
     flex-direction: column;

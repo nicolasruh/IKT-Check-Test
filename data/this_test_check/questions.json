@@ -1,0 +1,299 @@
+[
+ 
+  {
+    "id": 9,
+    "topic": "Zip-Dateien",
+    "group": "Grundlagen",
+    "explanation": "<p>Zip-Dateien sind komprimierte Daten in einer Datei mit der Endung .zip. Eine Zip-Datei ist meist ein komprimierter Ordner, dieser kann eine oder mehrere Dateien und auch weitere Unterordner enthalten. Das Zippen dient dazu, durch Komprimierung der enthaltenen Information den Speicherplatz zu reduzieren und/oder die Übertragung von Dateien zu erleichtern, indem mehreren Dateien und Ordner in eine einzige Datei verpackt werden.</p><p>Im Datei-Explorer (unter Windows) wird eine Vorschau des Inhalts gezeigt, wenn man einen Doppelklick auf eine Zip-Datei ausführt. Um mit den enthaltenen Daten zu arbeiten, muss die Zip-Datei jedoch entpackt (entzippt/extrahiert) werden, z.B. mit den vom Betriebssystem bereitgestellten Möglichkeiten (im Kontextmenu) oder über spezialisierte, herunterladbare Programme für das Packen und Entpacken von Ordnern bzw. Dateien. </p><p>Im Unterschied zu Windows-Systemen werden Zip-Dateien im Finder (unter MacOS) durch einen Doppelklick direkt entzippt, es gibt keine «Vorschau» der noch verpackten Inhalte.</p><p>Die Kompression von Zip-Dateien funktioniert besonders gut, wenn Text-Dateien enthalten sind. Einige Dateiformate, wie .docx (Word) und .pptx (Powerpoint), sind in Wirklichkeit gezippte Ordner.</p>",
+    "question": "Welche Aussagen über Zip-Dateien sind richtig?",
+    "options": [
+      {
+        "text": "Man kann mehrere Ordner zu einer Zip-Datei machen.",
+        "correct": true
+      },
+      {
+        "text": "Im Datei-Explorer (unter Windows) muss man eine Zip-Datei per Rechtsklick entzippen.",
+        "correct": true
+      },
+      {
+        "text": "Im Datei-Explorer (unter Windows) wird eine Vorschau des Inhalts gezeigt, wenn man einen Doppelklick auf eine Zip-Datei ausführt.",
+        "correct": true
+      },
+      {
+        "text": "Man kann einen Ordner samt enthaltener Dateien zu einer Zip-Datei machen.",
+        "correct": true
+      },
+      {
+        "text": "Ein Grund für das Erstellen einer Zip-Datei ist es, Daten komprimieren zu wollen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": "Audioformate",
+    "group": "Grundlagen",
+    "explanation": "<p>Audioformate sind Dateiformate, die zur Speicherung von Audiosignalen wie Tönen oder Liedern verwendet werden. Es gibt viele verschiedene Audioformate, die sich in Bezug auf Kompressionsrate, Klangqualität und andere Eigenschaften unterscheiden.</p><p>Einige der gebräuchlichsten Audioformate sind MP3, WAV, FLAC, AAC, OGG und AIFF. MP3 ist ein weit verbreitetes Format, das eine starke Kompression bietet, aber einige Klangqualität verliert. WAV ist ein unkomprimiertes Format, das eine hohe Klangqualität bietet, aber mehr Speicherplatz benötigt. FLAC ist ein verlustfreies Format, das eine hohe Klangqualität und eine moderate Kompression bietet.</p><p>Es ist wichtig zu beachten, dass nicht alle Audioformate auf allen Geräten oder in allen Anwendungen unterstützt werden. Die Wahl des richtigen Audioformats hängt von den spezifischen Anforderungen der jeweiligen Situation ab.</p>",
+    "question": "Welche Aussagen über Audioformate sind richtig?",
+    "options": [
+      {
+        "text": "WAV ist ein Audioformat, das eine hohe Klangqualität bietet, aber viel Speicherplatz benötigt.",
+        "correct": true
+      },
+      {
+        "text": "AIFF ist ein Audioformat.",
+        "correct": true
+      },
+      {
+        "text": "MP3 ist ein Audioformat.",
+        "correct": true
+      },
+      {
+        "text": "AAC ist ein Audioformat.",
+        "correct": true
+      },
+      {
+        "text": "JPG ist ein Audioformat.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "topic": "Formeln ",
+    "group": "Tabellenkalkulation",
+    "explanation": "<p>Formeln sind ein integraler Bestandteil eines jeden Tabellenkalkulationsprogramms, wie Excel oder Google Sheets. Sie ermöglichen es den Benutzern, Berechnungen durchzuführen, basierend entweder auf konkreten, direkt in der Formel angegebenen Werten oder auf den Werten, die in bestimmten Zellen gespeichert sind. Eine Formel beginnt mit einem Gleichheitszeichen (=), gefolgt von einer Kombination von Zahlen, Zellbezügen, Operatoren und Funktionen. Eine Formel ist also eine u.u. auch sehr komplizierte Berechnung, deren Ergebnis dann zum Inhalt der Zelle wird. </p><p>Einige der grundlegenden Operatoren in Formeln sind Addition (+), Subtraktion (-), Multiplikation (*), und Division (/). Es gibt auch eine Vielzahl von Funktionen, die in Formeln verwendet werden können, um spezifischere oder komplexere Berechnungen durchzuführen. Einige Formeln können so einfach sein wie das Addieren von zwei Zahlen, während andere viel komplexer sind und mehrere Funktionen und Zellbezüge verwenden. In Tabellenkalkulationsprogrammen ist es sehr üblich, dass in Formeln mit Zellbezügen gearbeitet wird, weil die Rechnungen erst so flexibel und übertragbar werden.</p>",
+    "question": "Welche Aussagen zu Formeln sind richtig?",
+    "options": [
+      {
+        "text": "Die Formel =A1|A2 gibt den Mittelwert der Zellen A1 und A2 zurück.",
+        "correct": false
+      },
+      {
+        "text": "Die Formel =A1:A2 teilt den Wert in der Zellen A1 durch denjenigen in A2.",
+        "correct": false
+      },
+      {
+        "text": "Die Formel -A1 gibt den negativen Wert von A1 zurück.",
+        "correct": false
+      },
+      {
+        "text": "Die Formel =2*A1 verdoppelt den Wert in Zelle A1.",
+        "correct": true
+      },
+      {
+        "text": "Formeln in Tabellenkalkulationsprogrammen beginnen üblicherweise mit einem Gleichheitszeichen (=).",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "topic": "Folienmaster",
+    "group": "Präsentationen",
+    "explanation": "<p>Der Folienmaster ist ein wesentliches Element in Präsentationsprogrammen wie Microsoft PowerPoint oder Google Slides. Er fungiert als Vorlage oder Blaupause für alle Folien in einer Präsentation und definiert das grundlegende Layout, das Design und die Formatierung. Dazu gehören Elemente wie Schriftart, Schriftgröße, Farbschemata, Hintergründe, Platzierung und Formatierung von Textfeldern und andere Objekte. </p><p>Änderungen, die am Folienmaster vorgenommen werden, wirken sich auf alle Folien aus, die diesen Master verwenden. Das ermöglicht eine einheitliche und konsistente Gestaltung der gesamten Präsentation. Es ist auch möglich, mehrere Folienmaster in einer Präsentation zu haben, was besonders nützlich ist, wenn verschiedene Abschnitte unterschiedliche Designs oder Layouts erfordern. </p><p>Ein gutes Verständnis des Folienmasters ist entscheidend für eine effiziente und professionelle Präsentationsgestaltung. Es ermöglicht Benutzern, schnell und einfach ein einheitliches Design über eine Vielzahl von Folien hinweg zu erstellen und zu ändern. Es erleichtert auch die Wartung und Aktualisierung von Präsentationen, da Änderungen an einem zentralen Ort vorgenommen werden können und sich automatisch auf alle Folien auswirken. </p>",
+    "question": "Welche Aussagen zum Folienmaster sind richtig?",
+    "options": [
+      {
+        "text": "Der Folienmaster ist eine Art Vorlage für das Design aller Folien in einer Präsentation.",
+        "correct": true
+      },
+      {
+        "text": "Jede Folie in einer Präsentation muss einen eigenen, einzigartigen Folienmaster haben.",
+        "correct": false
+      },
+      {
+        "text": "Der Folienmaster kann Elemente wie Schriftart, Schriftgröße, Farbschemata und Hintergründe definieren.",
+        "correct": true
+      },
+      {
+        "text": "Änderungen am Folienmaster können nicht rückgängig gemacht werden.",
+        "correct": false
+      },
+      {
+        "text": "Der Folienmaster steuert die Reihenfolge der Folien in einer Präsentation.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "topic": "Direkte vs. Indirekte Formatierung",
+    "group": "Textverarbeitung",
+    "explanation": "<p>In Textverarbeitungsprogrammen gibt es grundsätzlich zwei Arten der Formatierung: die direkte und die indirekte Formatierung. Beide Methoden haben ihre Vor- und Nachteile und sind für unterschiedliche Anwendungsfälle geeignet.</p><p>Die direkte Formatierung ist die einfachste und intuitivste Methode. Sie erlaubt es, Textelemente einzeln auszuwählen und ihre Formatierungseigenschaften wie Schriftart, Schriftgröße, Farbe, Ausrichtung usw. direkt zu ändern. Diese Methode ist besonders nützlich für kurze Texte oder einzelne Textelemente, bei denen eine individuelle Formatierung erforderlich ist. Der Nachteil der direkten Formatierung ist, dass sie bei größeren Dokumenten schnell unübersichtlich und schwer zu verwalten wird. Zudem ist es schwierig, ein einheitliches Erscheinungsbild zu gewährleisten und Änderungen konsistent durchzuführen.</p><p>Die indirekte Formatierung hingegen verwendet Formatvorlagen (auch bekannt als Styles), um das Aussehen von Text zu definieren. Diese Vorlagen können dann auf verschiedene Teile eines Dokuments angewendet werden, was eine konsistente Formatierung über das gesamte Dokument hinweg ermöglicht. Darüber hinaus können Änderungen an der Formatvorlage schnell und einfach auf alle damit formatierten Textelemente angewendet werden. Dies macht die indirekte Formatierung besonders nützlich für größere Dokumente und solche, die eine einheitliche Formatierung erfordern. Der Nachteil der indirekten Formatierung ist, dass sie etwas mehr Planung und Verständnis für die Funktionsweise von Formatvorlagen erfordert.</p>",
+    "question": "Welche Aussagen über direkte bzw. indirekte Formatierung sind richtig?",
+    "options": [
+      {
+        "text": "Änderungen an der Formatvorlage werden auf alle damit formatierten Textelemente angewendet.",
+        "correct": true
+      },
+      {
+        "text": "Indirekte Formatierung erfordert weniger Planung und Verständnis für die Funktionsweise von Formatvorlagen als direkte Formatierung.",
+        "correct": false
+      },
+      {
+        "text": "Indirekte Formatierung ist gleichbedeutend mit dem Einsatz von Formatvorlagen.",
+        "correct": true
+      },
+      {
+        "text": "Bei der indirekten Formatierung ist es einfacher, ein einheitliches Erscheinungsbild zu gewährleisten und Änderungen konsistent durchzuführen.",
+        "correct": true
+      },
+      {
+        "text": "Bei der direkten Formatierung wird die Formatierung direkt auf den Text angewendet, ohne die Verwendung von Formatvorlagen.",
+        "correct": true
+      }
+    ]
+  },
+  
+  {
+    "id": 12,
+    "topic": "Ordnerstruktur",
+    "group": "Grundlagen",
+    "explanation": "<p>Die Ordnerstruktur auf einer Festplatte beschreibt die logische Organisation und Hierarchie von Dateien und Ordnern, die vom Betriebssystem des Computers verwaltet wird. Diese Struktur erlaubt es uns, Dateien und Ordner auf eine übersichtliche und systematische Weise zu organisieren und zu navigieren. Das ist ähnlich wie das System, das in einem Büro verwendet wird, wo Dokumente in Ordnern abgelegt und diese Ordner in Schubladen oder Schränken gespeichert werden. In der digitalen Welt sind diese \"Schränke\" die Stammverzeichnisse (Root-Verzeichnisse) und die \"Schubladen\" und \"Ordner\" sind Unterordner, die weitere Unterordner und Dateien enthalten können. </p><p>In dieser logischen Hierarchie ist jedes Element - ob Datei oder Ordner - eindeutig durch seinen Pfad identifizierbar. Der Pfad besteht aus einer Abfolge von Verzeichnissen, die vom Stammverzeichnis (Root-Verzeichnis) zur spezifischen Datei oder zum spezifischen Ordner führen. </p><p>Wichtig ist dabei zu verstehen, dass diese logische Ordnerstruktur nicht unbedingt die physische Speicherung von Daten auf der Festplatte widerspiegelt. Während die Ordnerstruktur uns eine geordnete, hierarchische Ansicht der Daten bietet, können die tatsächlichen Daten auf der Festplatte verteilt und in verschiedensten Bereichen des physischen Speichermediums abgelegt sein. Die Verwaltung dieser physischen Speicherung ist Aufgabe des Betriebssystems und für den Benutzer in der Regel unsichtbar.Ein gutes Verständnis der Ordnerstruktur ist unerlässlich für eine effektive und effiziente Nutzung eines Computers. Es erleichtert das Finden, Organisieren und Verwalten von Dateien und Programmen. Darüber hinaus trägt es dazu bei, das Verständnis für die Funktionsweise von Betriebssystemen zu vertiefen, insbesondere in Bezug auf die Verwaltung von Softwareinstallationen und Datensicherung. Mit Kenntnissen über die Ordnerstruktur kann man Daten und Anwendungen leichter organisieren, den Speicherplatz besser nutzen und Probleme bei der Fehlersuche effizienter lösen. </p>quest",
+    "question": "Welche Aussagen zur Ordnerstruktur einer Festplatte sind richtig?",
+    "options": [
+      {
+        "text": "Eine korrekte Ordnerstruktur erleichtert das Auffinden und Organisieren von Dateien.",
+        "correct": true
+      },
+      {
+        "text": "Die Ordnerstruktur dient dazu, Dateien nach einem hierarchisch geordneten System abzulegen.",
+        "correct": true
+      },
+      {
+        "text": "Den obersten Ordner einer Ordnerstruktur nennt man Stammverzeichnis oder Laufwerk.",
+        "correct": true
+      },
+      {
+        "text": "Eine logische Strukturierung der Ordner in der Ordnerstruktur erleichtert die Navigation und den Zugriff auf Dateien.",
+        "correct": true
+      },
+      {
+        "text": "Die Ordnerstruktur kann individuell angepasst und auf die Bedürfnisse des Benutzers zugeschnitten werden.",
+        "correct": true
+      }
+    ]
+  },
+ 
+  {
+    "id": 25,
+    "topic": "Bereichsbezüge",
+    "group": "Tabellenkalkulation",
+    "explanation": "<p>Zusätzlich zu relativen, absoluten und gemischten Zellbezügen gibt es in Tabellenkalkulationsprogrammen auch Bereichsbezüge. Ein Bereichsbezug bezieht sich auf eine Gruppe von Zellen innerhalb einer Tabelle, anstatt nur auf eine einzige Zelle. Er wird durch zwei Zelladressen angegeben, die durch einen Doppelpunkt getrennt sind, zum Beispiel A1:B2. Dieser Bereichsbezug umfasst alle Zellen zwischen A1 und B2 einschließlich. </p><p>Bereichsbezüge können auch relative, absolute oder gemischte Bezüge sein, abhängig von den verwendeten Zelladressen: Kommt nirgends ein $ vor, handelt es sich um einen relativen (Bereichs-)Bezug, für einem absoluten Bezug müssen alle vier Spalten- bzw. Zeilenbezeichner per $-Zeichen fixiert sein, wenn das nur auf manche zutrifft, nennt man den Bezug gemischt - hier kann sich übrigens die Grösse des Bereichs beim Kopieren ändern(!). Bereichsbezüge sind besonders nützlich in Formeln, die eine Operation auf einer Reihe von Zellen ausführen, wie beispielsweise Summe, Durchschnitt oder Anzahl. </p><p>Ein tiefgreifendes Verständnis von Bereichsbezügen erweitert die Möglichkeiten der Datenanalyse in Tabellenkalkulationsprogrammen und ermöglicht eine effiziente Durchführung von Massenoperationen und -berechnungen. </p>",
+    "question": "Welche Aussagen zu Bereichsbezügen sind richtig?",
+    "options": [
+      {
+        "text": "Ein Bereichsbezug verweist auf eine Gruppe von Zellen.",
+        "correct": true
+      },
+      {
+        "text": "Ein Bereichsbezug bezieht sich immer nur auf eine einzelne Zelle.",
+        "correct": false
+      },
+      {
+        "text": "Mit Bereichsbezügen können Massenoperationen und -berechnungen effizient durchgeführt werden.",
+        "correct": true
+      },
+      {
+        "text": "Bereichsbezüge können relative, absolute oder gemischte Bezüge sein.",
+        "correct": true
+      },
+      {
+        "text": "Ein Bereichsbezug wird durch zwei Zelladressen angegeben, die durch einen Bindestrich getrennt sind.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": "Auflösungen",
+    "group": "Grundlagen",
+    "explanation": "<p>Die Auflösung ist ein Maß für die Detailgenauigkeit einer Darstellung und wird in verschiedenen Kontexten unterschiedlich gemessen. Bei Bildschirmen und digitalen Fotos misst man die Auflösung in Pixel. Die Auflösung eines Bildschirms gibt an, wie viele Pixel in der Breite und Höhe dargestellt werden können, z.B. 1920 x 1080 für Full HD. Die Auflösung eines digitalen Fotos beschreibt die Anzahl der Pixel, die für das Bild gespeichert sind, z.B. 4000 x 3000 Pixel = 12 Megapixel.</p><p>Die Auflösung eines Druckers wird in der Regel in dpi (Dots per Inch) oder ppm (Punkte pro Millimeter) gemessen. Das macht unter anderem deswegen Sinn, weil man bei einem Drucker einstellen kann, wie nach aneinander die Bildpunkte gedruckt werden sollen, während der Abstand der Pixel in einem Bildschirm physisch gegeben und unveränderlich ist.  Die Druckauflösung beeinflusst die Detailgenauigkeit und Schärfe der gedruckten Bilder und Texte. Eine höhere Auflösung bedeutet mehr Pixel pro Flächeneinheit, deswegen braucht ein Bild sehr viele Megapixel, wenn man es mit guter Qualität (> 200 dpi) und grossformatig ausdrucken möchte.  </p><p>Die Auflösung ist ein wichtiger Faktor bei der Auswahl eines Monitors, Druckers oder einer Kamera, da sie die Bildqualität und Detailgenauigkeit beeinflusst. Es ist jedoch zu beachten, dass die Auflösung moderner Bildschirme meist höher ist als die des menschlichen Auges – noch mehr Pixel machen also für die Wahrnehmung keinen Unterschied. Zudem löst das menschliche Auge Tintenkleckse feiner auf als Lichtpunkte (Pixel), weshalb ein Drucker für dieselbe Fläche 3-4 Mal mehr Bildpunkte als ein Bildschirm benötigt. Das ist gleichzeitig eine der Erklärungen dafür, dass die meisten Kameras sehr viel mehr Pixel aufnehmen, als ein Bildschirm als Vollbild darstellen kann.</p>",
+    "question": "Welche Aussagen über Auflösungen sind richtig?",
+    "options": [
+      {
+        "text": "Die Auflösung eines Druckers beeinflusst die Detailgenauigkeit und Schärfe der gedruckten Bilder und Texte.",
+        "correct": true
+      },
+      {
+        "text": "Eine höhere Auflösung bedeutet eine größere Bildschirmgröße oder Druckfläche.",
+        "correct": false
+      },
+      {
+        "text": "Die Auflösung eines digitalen Fotos beschreibt die Anzahl der Pixel, die das Bild enthält, z.B. 12 Megapixel.",
+        "correct": true
+      },
+      {
+        "text": "Die Auflösung moderner Bildschirme ist meist höher als die des menschlichen Auges – noch mehr Pixel machen also für die Wahrnehmung keinen Unterschied",
+        "correct": true
+      },
+      {
+        "text": "Die Auflösung eines digitalen Fotos misst man in Zoll.",
+        "correct": false
+      }
+    ]
+  },
+ 
+ 
+  {
+    "id": 14,
+    "topic": "Textformate",
+    "group": "Grundlagen",
+    "explanation": "<p>Textformate sind Dateiformate, die speziell für die Speicherung von Textinformationen entwickelt wurden. Sie können einfache Textdaten (wie .txt) oder formatierten Text (wie .docx, .rtf) enthalten. Einige Textformate können auch Bilder und andere Medien enthalten.</p><p>Das .txt-Format ist das einfachste Textformat. Es enthält nur Text und keine Formatierungsinformationen. Es ist universell kompatibel und kann von nahezu jedem Texteditor geöffnet werden.</p><p>Das .rtf-Format (Rich Text Format) ermöglicht die Speicherung von Texten mit einfacher Formatierung wie Fettdruck, Kursivschrift und Unterstreichungen. Es ist weit verbreitet und wird von den meisten Textverarbeitungsprogrammen unterstützt.</p><p>Das .docx-Format ist ein XML-basiertes Dateiformat, das von Microsoft für Word-Dokumente entwickelt wurde. Es ist Teil des Office Open XML-Standards (auch bekannt als OOXML). .docx-Dateien können komplexe Formatierungen, Bilder, Diagramme und andere Medien enthalten. Sie sind jedoch hauptsächlich mit Microsoft Word kompatibel, obwohl andere Textverarbeitungsprogramme sie oft öffnen können.</p>",
+    "question": "Welche Aussagen über Textformate sind richtig?",
+    "options": [
+      {
+        "text": "Das Format .html kann zum Speichern von Text verwendet werden.",
+        "correct": true
+      },
+      {
+        "text": "Das Format .png ist zum Speichern von Text geeignet.",
+        "correct": false
+      },
+      {
+        "text": "Das Format .mp4 ist zum Speichern von Text geeignet.",
+        "correct": false
+      },
+      {
+        "text": "Das Format .wav ist zum Speichern von Text geeignet.",
+        "correct": false
+      },
+      {
+        "text": "Das .txt-Format enthält nur Text und keine Formatierungsinformationen.",
+        "correct": true
+      }
+    ]
+  },
+ 
+  {
+    "id": 23,
+    "topic": "Gängige Shortcuts",
+    "group": "Textverarbeitung",
+    "explanation": "<p>Shortcuts, auch Tastaturkürzel genannt, sind Kombinationen von Tasten, die eine bestimmte Aktion in einem Softwareprogramm auslösen. Sie sind dazu da, häufige Aufgaben zu beschleunigen und die Bedienung von Programmen effizienter zu gestalten. In vielen Programmen, insbesondere in Textverarbeitungsprogrammen, sind bestimmte Shortcuts weit verbreitet und standardisiert.</p><p>CTRL + S (MAC: CMD + S) wird in der Regel verwendet, um das aktuelle Dokument zu speichern. CTRL + C (MAC: CMD + C) und CTRL + X (MAC: CMD + X) werden verwendet, um Elemente zu kopieren bzw. auszuschneiden. CTRL + V (MAC: CMD + V) fügt den Inhalt der Zwischenablage an der aktuellen Position ein. CTRL + Z (MAC: CMD + Z) macht die letzte Aktion rückgängig, und CTRL + A (MAC: CMD + A) markiert den gesamten Text oder alle Elemente.</p><p>Es gibt auch spezielle Shortcuts für Such- und Ersetzungsfunktionen, das Öffnen von Dialogfenstern und viele andere Funktionen. Die genaue Wirkung eines Shortcuts kann von Programm zu Programm variieren, und manche Programme erlauben es den Benutzern, ihre eigenen Shortcuts zu definieren.</p>",
+    "question": "Welche Aussagen zu gängigen Shortcuts sind richtig?",
+    "options": [
+      {
+        "text": "CTRL + H (MAC: CMD + H) öffnet das Fenster zur Suche und Ersetzung von Text.",
+        "correct": true
+      },
+      {
+        "text": "CTRL + C (MAC: CMD + C) kopiert markierte Elemente in die Zwischenablage.",
+        "correct": true
+      },
+      {
+        "text": "CTRL + D (MAC: CMD + D) öffnet das Druckmenü.",
+        "correct": false
+      },
+      {
+        "text": "CTRL + S (MAC: CMD + S) speichert das Dokument.",
+        "correct": true
+      },
+      {
+        "text": "CTRL + Z (MAC: CMD + Z) wiederholt die zuletzt rückgängig gemachte Aktion.",
+        "correct": false
+      }
+    ]
+  }
+ 
+]

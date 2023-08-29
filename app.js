@@ -6,7 +6,10 @@ const session = require('express-session');
 const app = express();
 const port = 3000;
 
-const SECRET_CODE = "ABCDE"; // Der echte Code soll geheim gehalten und hier ersetzt werden
+const SECRET_CODE = "ZZQPO"; // Der echte Code soll geheim gehalten und hier ersetzt werden
+const SECRET_CODE_TEST = "ABCDE"; // Der echte Code soll geheim gehalten und hier ersetzt werden
+let subfolder = 'this_check';
+
 
 app.use(express.static(__dirname));
 app.use(express.static('public'));
@@ -38,7 +41,11 @@ app.post('/register', (req, res) => {
     
 
   // Überprüfe den Zugangscode
-  if (accessCode !== SECRET_CODE) {
+  if (accessCode == SECRET_CODE) {
+      subfolder = 'this_check';
+  } else if (accessCode == SECRET_CODE_TEST) {
+      subfolder = 'this_test_check';
+  } else {
     res.json({ error: 'Der Zugangscode ist nicht korrekt.' });
     return;
   }
@@ -49,7 +56,7 @@ app.post('/register', (req, res) => {
   req.session.startTime = new Date().toISOString();
 
   // Lese die Fragen zuerst aus der JSON-Datei
-  const questionsPath = path.join(__dirname, 'data', 'this_check', 'questions.json');
+  const questionsPath = path.join(__dirname, 'data', subfolder, 'questions.json');
   questions = JSON.parse(fs.readFileSync(questionsPath, 'utf8'));
 
   // Schuffle die Fragen
@@ -88,7 +95,7 @@ app.post('/register', (req, res) => {
 
   // Erstelle eine neue JSON-Datei im gewünschten Ordner
   const emailPrefix = email.split('@')[0];
-  fs.writeFileSync(path.join(__dirname, 'data', 'this_check', `${emailPrefix}.json`), JSON.stringify(toSave));
+  fs.writeFileSync(path.join(__dirname, 'data', subfolder, `${emailPrefix}.json`), JSON.stringify(toSave));
 
   // Wähle die erste Frage aus
   currentQuestionIndex = 0;
@@ -120,7 +127,7 @@ app.get('/ikt-check/:id', checkAuthentication, (req, res) => {
 
 function renderQuestion(req, res, index) {
   const emailPrefix = req.session.email.split('@')[0];
-  const filepath = path.join(__dirname, 'data', 'this_check', `${emailPrefix}.json`);
+  const filepath = path.join(__dirname, 'data', subfolder, `${emailPrefix}.json`);
 
   // Prüfe, ob die Datei existiert
   if (fs.existsSync(filepath)) {
@@ -151,7 +158,7 @@ app.post('/update', (req, res) => {
 
   // Read the user's JSON file
   const emailPrefix = email.split('@')[0];
-  const filePath = path.join(__dirname, 'data', 'this_check', `${emailPrefix}.json`);
+  const filePath = path.join(__dirname, 'data', subfolder, `${emailPrefix}.json`);
   const userData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
   // Update the "ans" field of the option
@@ -167,7 +174,7 @@ app.post('/update', (req, res) => {
 app.post('/submit', checkAuthentication, (req, res) => {
   const { questionIndex, optionIndex, checked } = req.body;
   const emailPrefix = req.session.email.split('@')[0];
-  const filePath = path.join(__dirname, 'data', 'this_check', `${emailPrefix}.json`);
+  const filePath = path.join(__dirname, 'data', subfolder, `${emailPrefix}.json`);
   const quizData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   // Update the "ans" field of the option
   quizData.questions[questionIndex].options[optionIndex].ans = checked;
@@ -227,7 +234,7 @@ function evaluateQuiz(quizData) {
 
     // Erstelle den CSV-Dateinamen mit aktuellem Datum
     const currentDate = new Date(quizData.meta.starttime).toISOString().slice(0, 10).replace(/-/g, "");
-    const csvFilePath = path.join(__dirname, 'data', `ergebnisse${currentDate}.csv`);
+    const csvFilePath = path.join(__dirname, 'data', 'results', `ergebnisse${currentDate}.csv`);
 
     // Überprüfe, ob die CSV-Datei existiert
     if (!fs.existsSync(csvFilePath)) {
